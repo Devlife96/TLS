@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Schibsted Grotesk" !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #202124 !important;
+  background: #faf9f7 !important;
+  font-size: 1rem;
+}
+
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none !important;
+}
+
+.logo {
+  width: 150px;
+  height: 40px;
+}
+
+/* navigation */
+.navigation {
+  padding: 1rem 0;
+}
+.navigation .navigation-item {
+  display: inline-block;
+  padding: 0 0.5rem;
+  font-weight: 500;
+  font-size: 14px;
+}
+.navigation .navigation-item a {
+  color: #787a7b;
+  transition: color 0.2s ease-in-out;
+}
+.navigation .navigation-item a:hover {
+  color: #ff7124;
+}
+.navigation .navigation-item a.active {
+  color: #ff7124;
+  font-weight: 600;
+  border-bottom: 1px solid #ff7124;
+}
+.profile {
+  width: 30px;
+  height: 30px;
+  padding: 0 !important;
+  color: #606889;
+  text-align: center;
+  border: 1px solid #ff7124;
+  color: #ff7124;
+  transition: border color 0.2s ease-in-out;
+}
+.profile:hover {
+  border: 1px solid #606889;
+  color: #606889;
+}
+.profile img {
+  background-position: center;
+  background-size: cover;
+  background-clip: initial;
+  object-fit: cover;
+}
+
+.btn-profile {
+  background: #faf9f7 !important;
+  color: #787a7b !important;
+  border: 1px solid #e2e4e7 !important;
+  transition: background, color, border 0.2s ease-in-out;
+}
+.btn-profile:hover {
+  background: #ff7124 !important;
+  color: #faf9f7 !important;
+  border: 1px solid #ff7124;
+}
+.btn-login {
+  background: #ff7124 !important;
+  color: #faf9f7 !important;
+  transition: background, color, border 0.2s ease-in-out;
+}
+
+/* login */
+.login {
+  width: 40%;
+}
+.login-img {
+  border: 1px solid #ff7124;
+}
+.login-img .bi {
+  font-size: 4rem;
+}
+.link a {
+  color: #ff7124;
+}
+.input {
+  border: 1px solid #e2e4e7;
+}
+.input::placeholder {
+  color: #787a7b;
+  font-weight: 50 !important;
+  font-size: 13px;
+}
+input:focus {
+  outline: none;
+}
+
+.divide {
+  width: 1px;
+  height: 25px;
+}
+
+/* search bar */
+.search input {
+  width: 500px;
+  height: 60px;
+  border-radius: 4rem 0 0 4rem;
+  border: 1px solid #e2e4e7;
+  color: #787a7b;
+  font-size: 14px;
+}
+.search input:focus {
+  outline: none !important;
+  color: #787a7b;
+}
+.search button {
+  width: 90px;
+  height: 60px;
+  border: none;
+  border-radius: 0 4rem 4rem 0;
+  border: 1px solid #e2e4e7;
+  background: #fff;
+  margin: 0 -3px;
+  transition: background 0.2s ease-in-out;
+}
+.search button:hover {
+  background: #ff7124;
+  border: 1px solid #ff7124;
+  color: #fff;
+}
+.search-header a {
+  border-radius: 0.5rem;
+  border: 1px solid #e2e4e7;
+  color: #787a7b;
+  transition: background 0.2s ease-in-out;
+}
+.search-header a:hover {
+  background: #ff7124 !important;
+  border: 1px solid #ff7124;
+  color: #fff;
+}
+.search-header a.active {
+  background: #ff7124 !important;
+  border: 1px solid #ff7124;
+  color: #fff;
+}
+.submenu-header a {
+  border-radius: 0.5rem;
+  border: 1px solid #e2e4e7;
+  color: #787a7b;
+  transition: background 0.2s ease-in-out;
+}
+.submenu-header a:hover {
+  background: #ff7124 !important;
+  border: 1px solid #ff7124;
+  color: #fff;
+}
+.submenu-header a.active {
+  background: #ff7124 !important;
+  border: 1px solid #ff7124;
+  color: #fff;
+}
+/* box container */
+.accord-item {
+  animation: testim-show 0.5s ease-in-out forwards;
+}
+
+.hide {
+  display: none;
+  animation: testim-content-out 0.5s ease-in-out forwards;
+}
+
+.box-link .box-list li {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #e2e4e7;
+  border-radius: 10px;
+  transition: border 0.2s ease-in-out;
+}
+
+.box-link .box-list li a {
+  color: #787a7b;
+  transition: color 0.2s ease-in-out;
+}
+.box-link .box-list li:hover {
+  border: 1px solid #ff7124;
+}
+.box-link .box-list a:hover {
+  color: #ff7124;
+}
+/* button */
+.bl-link {
+  font-size: 14px !important;
+  border: 1px solid #e2e4e7 !important;
+  border-radius: 4rem !important;
+  transition: border, color 0.2s ease-in-out;
+}
+.bl-link:hover {
+  border: 1px solid #ff7124 !important;
+  color: #ff7124 !important;
+}
+
+/* footer */
+.footer-link li {
+  padding: 0 0.4rem;
+}
+.footer-link li a {
+  color: #606889;
+  font-weight: normal;
+  transition: color 0.2s ease-in-out;
+}
+.footer-link li a:hover {
+  color: #e8dfd5;
+}

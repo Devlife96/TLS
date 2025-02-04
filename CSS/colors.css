@@ -1,0 +1,66 @@
+/*background Colors  */
+.bg-black {
+  background: #202124;
+}
+.bg-navy {
+  background: #272d4e;
+}
+.bg-orange {
+  background: #ff7124;
+}
+.bg-blue {
+  background: #3b4883;
+}
+.bg-cinamon {
+  background: #dbbba7;
+}
+.bg-cashmere {
+  background: #e8dfd5;
+}
+.bg-silver {
+  background: #e2e4e7;
+}
+.bg-darkGray {
+  background: #787a7b;
+}
+.bg-whiteChalk {
+  background: #f6f4f1;
+}
+.bg-white {
+  background: #ffffff;
+}
+
+/* colors */
+.black {
+  color: #202124;
+}
+.navy {
+  color: #272d4e;
+}
+.orange {
+  color: #ff7124;
+}
+.blue {
+  color: #3b4883;
+}
+.cinamon {
+  color: #dbbba7;
+}
+.cashmere {
+  color: #e8dfd5;
+}
+.silver {
+  color: #e2e4e7;
+}
+.darkGray {
+  color: #787a7b;
+}
+.whiteChalk {
+  color: #f6f4f1;
+}
+.white {
+  color: #ffffff;
+}
+.light-blue {
+  color: #606889;
+}

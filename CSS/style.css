@@ -22,10 +22,13 @@ a {
 
 .logo {
   width: 150px;
-  height: 40px;
+  height: 50px;
 }
 
 /* navigation */
+header + .section {
+  margin-top: 5rem;
+}
 .navigation {
   padding: 1rem 0;
 }
@@ -66,6 +69,18 @@ a {
   background-size: cover;
   background-clip: initial;
   object-fit: cover;
+}
+.btn-form {
+  background: #faf9f7 !important;
+  font-size: 14px !important;
+  color: #787a7b !important;
+  border: 1px solid #e2e4e7 !important;
+  border-radius: 4rem !important;
+}
+.btn-form:hover {
+  background: #ff7124 !important;
+  color: #faf9f7 !important;
+  border: 1px solid #ff7124;
 }
 
 .btn-profile {
@@ -115,10 +130,29 @@ input:focus {
   height: 25px;
 }
 
+/* Content sidebar */
+.main-content {
+  width: 80%;
+  margin-left: 28%;
+  border-right: 1px solid #e2e4e7;
+}
+.sidebar {
+  position: fixed;
+  width: 20%;
+  height: 100vh;
+  border-left: 1px solid #e2e4e7;
+  border-right: 1px solid #e2e4e7;
+}
+.sidebar .title,
+.search-header {
+  height: 120px;
+  border-bottom: 1px solid #e2e4e7;
+}
+
 /* search bar */
 .search input {
-  width: 500px;
-  height: 60px;
+  width: 350px;
+  height: 40px;
   border-radius: 4rem 0 0 4rem;
   border: 1px solid #e2e4e7;
   color: #787a7b;
@@ -130,12 +164,13 @@ input:focus {
 }
 .search button {
   width: 90px;
-  height: 60px;
+  height: 40px;
   border: none;
   border-radius: 0 4rem 4rem 0;
   border: 1px solid #e2e4e7;
   background: #fff;
   margin: 0 -3px;
+  color: #787a7b;
   transition: background 0.2s ease-in-out;
 }
 .search button:hover {
@@ -143,6 +178,7 @@ input:focus {
   border: 1px solid #ff7124;
   color: #fff;
 }
+
 .search-header a {
   border-radius: 0.5rem;
   border: 1px solid #e2e4e7;
@@ -187,14 +223,14 @@ input:focus {
 
 .box-link .box-list li {
   width: 100%;
-  padding: 1rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   border: 1px solid #e2e4e7;
   border-radius: 10px;
   transition: border 0.2s ease-in-out;
 }
 
 .box-link .box-list li a {
+  font-size: 14px;
   color: #787a7b;
   transition: color 0.2s ease-in-out;
 }
@@ -204,9 +240,32 @@ input:focus {
 .box-link .box-list a:hover {
   color: #ff7124;
 }
+.box-link li.active {
+  border: 1px solid #ff7124;
+}
+.box-link li.active a {
+  color: #ff7124;
+}
+.searchByCritere a {
+  font-size: 14px;
+  background: #faf9f7;
+  color: #787a7b;
+  transition: color background 0.2s ease-in-out;
+}
+.searchByCritere a:hover {
+  background: #ff7124;
+  color: #fff;
+  border: 1px solid #ff7124;
+}
+.searchByCritere a.active {
+  background: #ff7124;
+  color: #fff;
+  border: 1px solid #ff7124;
+}
 /* button */
 .bl-link {
   font-size: 14px !important;
+  color: #787a7b !important;
   border: 1px solid #e2e4e7 !important;
   border-radius: 4rem !important;
   transition: border, color 0.2s ease-in-out;
@@ -214,6 +273,36 @@ input:focus {
 .bl-link:hover {
   border: 1px solid #ff7124 !important;
   color: #ff7124 !important;
+}
+
+/* table */
+table {
+  border-collapse: collapse !important;
+  border: 1px solid #e2e4e7 !important;
+}
+table tr td,
+table tr th {
+  background: none !important;
+}
+table tr:nth-last-child(1) td {
+  border-bottom: none !important;
+}
+table thead {
+  background: #fdfdfd !important;
+  border: 1px solid #e2e4e7 !important;
+}
+table thead th {
+  font-size: 0.9rem !important;
+  color: #606889 !important;
+  font-weight: 500 !important;
+  padding: 0.8rem 0.9rem !important;
+}
+table tbody tr td {
+  padding: 0.8rem 0.9rem !important;
+}
+table tbody tr td {
+  color: #787a7b !important;
+  font-size: 0.875rem;
 }
 
 /* footer */
@@ -227,4 +316,17 @@ input:focus {
 }
 .footer-link li a:hover {
   color: #e8dfd5;
+}
+
+/* modal */
+.box-modal {
+  width: 350px;
+  z-index: 1;
+  top: 28%;
+  right: 18%;
+  display: none;
+}
+
+.box-modal .close:hover {
+  background: #faf9f7;
 }

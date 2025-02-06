@@ -27,12 +27,10 @@
     />
   </head>
   <body>
-    <header>
-      <nav class="main-menu w-100 bg-white h-auto">
+    <header class="fixed-top">
+      <nav class="main-menu w-100 bg-white h-auto bottom-1">
         <div class="main-container-fluid mx-auto">
-          <div
-            class="d-flex justify-content-between align-items-center bottom-1"
-          >
+          <div class="d-flex justify-content-between align-items-center">
             <a class="logo">
               <img
                 src="../IMG/logo/logo.png"
@@ -48,22 +46,25 @@
                   <a class="py-2" href="home.html">Accueil</a>
                 </li>
                 <li class="navigation-item">
-                  <a class="py-2" href="agences.html">Agences</a>
+                  <a class="py-2" href="listeAgence.html">Agences</a>
                 </li>
                 <li class="navigation-item">
                   <a class="py-2" href="livreur.html">Livreurs</a>
                 </li>
                 <li class="navigation-item">
-                  <a class="py-2" href="client.html">Clients</a>
+                  <a class="py-2" href="listeClient.html">Clients</a>
                 </li>
                 <li class="navigation-item">
-                  <a class="py-2" href="port.html">Ports</a>
+                  <a class="py-2" href="listeUtilisateur.html">Utilisateurs>
+                </li>
+                <li class="navigation-item">
+                  <a class="py-2" href="listePort.html">Ports</a>
                 </li>
               </ul>
               <div class="divide bg-silver mx-3"></div>
               <a
                 href="profile.html"
-                class="profile _w-30 _h-30 rounded-pill middle"
+                class="profile _w-30 _h-30 rounded-pill middle overflow-hidden"
               >
                 <i class="bi bi-person-circle"></i>
               </a>
@@ -72,105 +73,153 @@
         </div>
       </nav>
     </header>
-    <section class="py-5">
+    <section class="section">
       <div class="main-container-fluid mx-auto">
-        <div
-          class="d-flex justify-content-between align-items-center submenu-header mb-3"
-        >
-          <div class="">
-            <span class="fs-14 darkGray">Information</span>
-            <h3 class="fs-22 fw-7 text-uppercase blue">Statistiques</h3>
-          </div>
-          <div class="d-flex align-items-center">
-            <a href="fournisseurs.html" class="_h-50 middle bg-white mx-1 px-3"
-              >Fournisseurs</a
+        <div class="d-flex justify-content-between">
+          <div class="main-content h-auto">
+            <div
+              class="d-flex justify-content-between align-items-center search-header mt-1 mb-4 px-4"
             >
-            <a href="addbl.html" class="_h-50 _w-50 middle bg-white mx-1"
-              ><i class="bi bi-plus-lg fw-6"></i
-            ></a>
-            <a href="#" class="_h-50 _w-50 middle bg-white mx-1 active"
-              ><i class="bi bi-graph-up"></i
-            ></a>
+              <div class="">
+                <span class="orange"
+                  >Information
+                  <span class="text-uppercase fw-6">Statistiques</span> !</span
+                >
+              </div>
+
+              <div class=""></div>
+            </div>
+
+            <div class="row px-4 gx-2 gy-2 mb-4 py-4">
+              <div class="col-md-4">
+                <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1">
+                  <span class="fs-12 darkGray text-uppercase d-block mb-3"
+                    >containeur</span
+                  >
+                  <div class="line bg-silver mb-3"></div>
+                  <h1 class="fs-22 fw-5 blue">400</h1>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1">
+                  <span class="fs-12 darkGray text-uppercase d-block mb-3"
+                    >containeur</span
+                  >
+                  <div class="line bg-silver mb-3"></div>
+                  <h1 class="fs-22 fw-5 blue">400</h1>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1">
+                  <span class="fs-12 darkGray text-uppercase d-block mb-3"
+                    >containeur</span
+                  >
+                  <div class="line bg-silver mb-3"></div>
+                  <h1 class="fs-22 fw-5 blue">400</h1>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1">
+                  <span class="fs-12 darkGray text-uppercase d-block mb-3"
+                    >containeur</span
+                  >
+                  <div class="line bg-silver mb-3"></div>
+                  <h1 class="fs-22 fw-5 blue">400</h1>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1">
+                  <span class="fs-12 darkGray text-uppercase d-block mb-3"
+                    >containeur</span
+                  >
+                  <div class="line bg-silver mb-3"></div>
+                  <h1 class="fs-22 fw-5 blue">400</h1>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1">
+                  <span class="fs-12 darkGray text-uppercase d-block mb-3"
+                    >containeur</span
+                  >
+                  <div class="line bg-silver mb-3"></div>
+                  <h1 class="fs-22 fw-5 blue">400</h1>
+                </div>
+              </div>
+            </div>
+
+            <!-- footer -->
+            <footer class="py-4 bg-navy px-4">
+              <div class="row justify-content-center gx-2">
+                <div class="col-md-4">
+                  <ul class="footer-link">
+                    <li><a href="home" class="fs-14">Accueil</a></li>
+                    <li><a href="agences.html" class="fs-14">Agences</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="footer-link">
+                    <li><a href="livreur.html" class="fs-14">Livreurs</a></li>
+                    <li>
+                      <a href="fournisseurs.html" class="fs-14">Fournisseurs</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="footer-link">
+                    <li><a href="client.html" class="fs-14">Clients</a></li>
+                    <li><a href="port.html" class="fs-14">Ports</a></li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
           </div>
-        </div>
-        <div class="line bg-silver mb-4"></div>
-        <div class="row">
-          <div class="col">
-            <div class="row gx-2 gy-2">
-              <div class="col-md-4">
-                <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1">
-                  <span class="fs-12 darkGray text-uppercase d-block mb-3"
-                    >containeur</span
-                  >
-                  <div class="line bg-silver mb-3"></div>
-                  <h1 class="fw-8 blue">400</h1>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1">
-                  <span class="fs-12 darkGray text-uppercase d-block mb-3"
-                    >containeur</span
-                  >
-                  <div class="line bg-silver mb-3"></div>
-                  <h1 class="fw-8 blue">400</h1>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1">
-                  <span class="fs-12 darkGray text-uppercase d-block mb-3"
-                    >containeur</span
-                  >
-                  <div class="line bg-silver mb-3"></div>
-                  <h1 class="fw-8 blue">400</h1>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1">
-                  <span class="fs-12 darkGray text-uppercase d-block mb-3"
-                    >containeur</span
-                  >
-                  <div class="line bg-silver mb-3"></div>
-                  <h1 class="fw-8 blue">400</h1>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1">
-                  <span class="fs-12 darkGray text-uppercase d-block mb-3"
-                    >containeur</span
-                  >
-                  <div class="line bg-silver mb-3"></div>
-                  <h1 class="fw-8 blue">400</h1>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1">
-                  <span class="fs-12 darkGray text-uppercase d-block mb-3"
-                    >containeur</span
-                  >
-                  <div class="line bg-silver mb-3"></div>
-                  <h1 class="fw-8 blue">400</h1>
-                </div>
+          <div class="sidebar bg-white mt-1">
+            <div class="title py-5 mb-3">
+              <h2 class="fs-20 px-4 blue">
+                <i class="bi bi-link fs-22 fw-800"></i> Navigation Rapide
+              </h2>
+            </div>
+            <div class="box-link px-3">
+              <ul class="box-list mx-0 px-0 mb-4">
+                <span class="light-blue fs-13 mb-2 d-block fw-5"
+                  >Recherche par liste</span
+                >
+                <div class="line bg-silver mb-4"></div>
+                <li class="px-2 py-2">
+                  <a href="client.html">Clients</a>
+                </li>
+                <li class="px-2 py-2">
+                  <a href="fournisseurs.html">Fournisseurs</a>
+                </li>
+                <li class="px-2 py-2"><a href="port.html">Port</a></li>
+                <li class="px-2 py-2"><a href="agences.html">Agences</a></li>
+              </ul>
+              <span class="light-blue fs-13 mb-2 d-block fw-5"
+                >Recherche par critere</span
+              >
+              <div class="line bg-silver mb-4"></div>
+              <div class="searchByCritere d-flex flex-wrap">
+                <a
+                  href="searchBL.html"
+                  class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
+                  >Numero BL</a
+                >
+                <a
+                  href="searchDossier.html"
+                  class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
+                  >Dossiers</a
+                >
+                <a
+                  href="#"
+                  class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
+                  >Containeur</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <footer class="py-4 bg-navy">
-      <div class="main-container-fluid mx-auto">
-        <div class="d-flex justify-content-between mt-3">
-          <p class="light-blue">&COPY;copyright | all right reserved TLS</p>
-          <ul class="footer-link d-flex">
-            <li><a href="home.html">Accueil</a></li>
-            <li><a href="agences.html">Agences</a></li>
-            <li><a href="fournisseurs.html">Fournisseurs</a></li>
-            <li><a href="livreur.html">Livreurs</a></li>
-            <li><a href="client.html">Clients</a></li>
-            <li><a href="port.html">Ports</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
     <script src="../JS/accordion.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

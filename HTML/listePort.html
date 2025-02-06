@@ -31,7 +31,7 @@
       <nav class="main-menu w-100 bg-white h-auto bottom-1">
         <div class="main-container-fluid mx-auto">
           <div class="d-flex justify-content-between align-items-center">
-            <a class="logo">
+            <a class="logo" href="home.html">
               <img
                 src="../IMG/logo/tls-logo.png"
                 alt=""
@@ -58,7 +58,7 @@
                   <a class="py-2" href="listeUtilisateur.html">Utilisateurs</a>
                 </li>
                 <li class="navigation-item">
-                  <a class="py-2" href="listePort.html">Ports</a>
+                  <a class="py-2 active" href="#">Ports</a>
                 </li>
               </ul>
               <div class="divide bg-silver mx-3"></div>
@@ -78,130 +78,89 @@
         <div class="d-flex justify-content-between">
           <div class="main-content h-auto">
             <div
-              class="d-flex justify-content-between align-items-center search-header mt-1 mb-4 px-4"
+              class="d-flex justify-content-center align-items-center search-header mb-2 mt-1"
             >
               <div class="">
-                <span class="orange"
-                  >Bienvenue, Sindy
-                  <span class="text-uppercase fw-6">Bayonne</span> !</span
-                >
-              </div>
-
-              <div class=""></div>
-            </div>
-
-            <div class="px-4">
-              <div class="bg-white rounded-3 px-4 py-4 h-auto mb-3">
-                <h2 class="fs-20 mb-3 darkGray">Information Personnelle</h2>
-                <div class="line bg-silver mb-4"></div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <span class="darkGray fs-10 text-uppercase">Prenom</span>
-                    <p class="blue fs-13 fw-5">
-                      Sindy <span class="text-uppercase fw-7">bayonne</span>
-                    </p>
-                  </div>
-
-                  <div class="col-md-6">
-                    <span class="darkGray fs-10 text-uppercase">Email</span>
-                    <p class="blue fs-13 fw-5">bayonne@gmail.com</p>
-                  </div>
-                  <div class="col-md-6">
-                    <span class="darkGray fs-10 text-uppercase">Role</span>
-                    <p class="blue fs-13 fw-5">Superviseur</p>
-                  </div>
-                  <div class="col-md-6">
-                    <span class="darkGray fs-10 text-uppercase"
-                      >derniere modification</span
-                    >
-                    <p class="blue fs-13 fw-5">Jeu, 30 Juillet 2024</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="px-4 mb-4">
-              <div class="bg-white rounded-3 px-4 py-4">
-                <h2 class="fs-20 mb-3 darkGray">Modifier votre profile</h2>
-                <div class="line bg-silver mb-4"></div>
-                <form action="" method="post">
-                  <div class="mb-3">
-                    <span class="text-uppercase blue fw-6 fs-12 d-block mb-2"
-                      >Nom complet</span
-                    >
-                    <input
-                      type="text"
-                      name=""
-                      id=""
-                      class="w-100 input px-4 py-2 rounded-3 fs-14 darkGray"
-                      placeholder="votre nom"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <span class="text-uppercase blue fw-6 fs-12 d-block mb-2"
-                      >Email</span
-                    >
-                    <input
-                      type="email"
-                      name=""
-                      id=""
-                      class="w-100 input px-4 py-2 rounded-3 fs-14 darkGray"
-                      placeholder="infouser@tls.com"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <span class="text-uppercase blue fw-6 fs-12 d-block mb-2"
-                      >mot de passe</span
-                    >
-                    <input
-                      type="password"
-                      name=""
-                      id=""
-                      class="w-100 input px-4 py-2 rounded-3 fs-14 darkGray"
-                      placeholder="..........."
-                    />
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="mb-3">
-                        <span
-                          class="text-uppercase blue fw-6 fs-12 d-block mb-2"
-                          >nouveau mot de passe</span
-                        >
-                        <input
-                          type="password"
-                          name=""
-                          id=""
-                          class="w-100 input px-4 py-2 rounded-3 fs-14 darkGray"
-                          placeholder="..........."
-                        />
-                      </div>
-                      <button
-                        type="submit"
-                        class="btn w-100 px-4 py-2 btn-profile"
-                      >
-                        Modifier
-                      </button>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="mb-3">
-                        <span
-                          class="text-uppercase blue fw-6 fs-12 d-block mb-2"
-                          >confirmation</span
-                        >
-                        <input
-                          type="password"
-                          name=""
-                          id=""
-                          class="w-100 input px-4 py-2 rounded-3 fs-14 darkGray"
-                          placeholder="..........."
-                        />
-                      </div>
-                    </div>
-                  </div>
+                <form action="" class="search">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="px-5"
+                    placeholder="Recherche un BL"
+                  />
+                  <button class="search-btn">
+                    <i class="bi bi-search"></i>
+                  </button>
                 </form>
               </div>
-            </div>
 
+              <a href="addbl.html" class="_h-40 _w-40 middle bg-white mx-2"
+                ><i class="bi bi-plus-lg fw-6"></i
+              ></a>
+              <a href="statistics.html" class="_h-40 _w-40 middle bg-white"
+                ><i class="bi bi-graph-up"></i
+              ></a>
+            </div>
+            <div class="px-4 mb-4 py-4">
+              <span class="darkGray fs-13">50 Resultat(s)</span>
+              <h3 class="blue fw-6 text-uppercase fs-14 mb-3">Liste Ports</h3>
+              <div class="line bg-silver mb-4"></div>
+              <table class="table result">
+                <thead class="thead-custom">
+                  <tr>
+                    <th class="fs-18 urbanist-medium darkGray-4">Nom</th>
+                    <th class="fs-18 urbanist-medium darkGray-4">Telephone</th>
+                    <th class="fs-18 urbanist-medium darkGray-4">Email</th>
+                    <th class="fs-18 urbanist-medium darkGray-4">Adresse</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="gray-3">User-001</td>
+                    <td class="gray-3">profile.png</td>
+                    <td class="gray-3">User-001</td>
+                    <td class="gray-3">profile.png</td>
+                  </tr>
+                  <tr>
+                    <td class="gray-3">User-001</td>
+                    <td class="gray-3">profile.png</td>
+                    <td class="gray-3">User-001</td>
+                    <td class="gray-3">profile.png</td>
+                  </tr>
+                  <tr>
+                    <td class="gray-3">User-001</td>
+                    <td class="gray-3">profile.png</td>
+                    <td class="gray-3">User-001</td>
+                    <td class="gray-3">profile.png</td>
+                  </tr>
+                  <tr>
+                    <td class="gray-3">User-001</td>
+                    <td class="gray-3">profile.png</td>
+                    <td class="gray-3">User-001</td>
+                    <td class="gray-3">profile.png</td>
+                  </tr>
+                  <tr>
+                    <td class="gray-3">User-001</td>
+                    <td class="gray-3">profile.png</td>
+                    <td class="gray-3">User-001</td>
+                    <td class="gray-3">profile.png</td>
+                  </tr>
+                  <tr>
+                    <td class="gray-3">User-001</td>
+                    <td class="gray-3">profile.png</td>
+                    <td class="gray-3">User-001</td>
+                    <td class="gray-3">profile.png</td>
+                  </tr>
+                  <tr>
+                    <td class="gray-3">User-001</td>
+                    <td class="gray-3">profile.png</td>
+                    <td class="gray-3">User-001</td>
+                    <td class="gray-3">profile.png</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <!-- footer -->
             <footer class="py-4 bg-navy px-4">
               <div class="row justify-content-center gx-2">
@@ -240,9 +199,7 @@
                   >Recherche par liste</span
                 >
                 <div class="line bg-silver mb-4"></div>
-                <li class="px-2 py-2">
-                  <a href="client.html">Clients</a>
-                </li>
+                <li class="px-2 py-2"><a href="client.html">Clients</a></li>
                 <li class="px-2 py-2">
                   <a href="fournisseurs.html">Fournisseurs</a>
                 </li>
@@ -260,12 +217,12 @@
                   >Numero BL</a
                 >
                 <a
-                  href="searchDossier.html"
+                  href=""
                   class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
                   >Dossiers</a
                 >
                 <a
-                  href="#"
+                  href=""
                   class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
                   >Containeur</a
                 >
@@ -275,6 +232,7 @@
         </div>
       </div>
     </section>
+    <!--  -->
     <script src="../JS/accordion.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

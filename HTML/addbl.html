@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- CUSTOM CSS LINK -->
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <!-- GOOGLE FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+
+    <!-- BOOTSTRAP ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header class="fixed-top">
+      <nav class="main-menu w-100 bg-white h-auto bottom-1">
+        <div class="main-container-fluid mx-auto">
+          <div class="d-flex justify-content-between align-items-center">
+            <a class="logo">
+              <img
+                src="../IMG/logo/tls-logo.png"
+                alt=""
+                srcset=""
+                class="w-auto h-100 img-fluid"
+              />
+            </a>
+
+            <div class="d-flex justify-content-center align-items-center">
+              <ul class="navigation mt-3">
+                <li class="navigation-item">
+                  <a class="py-2" href="home.html">Accueil</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="py-2" href="listeAgence.html">Agences</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="py-2" href="livreur.html">Livreurs</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="py-2" href="listeClient.html">Clients</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="py-2" href="listeUtilisateur.html">Utilisateurs</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="py-2" href="listePort.html">Ports</a>
+                </li>
+              </ul>
+              <div class="divide bg-silver mx-3"></div>
+              <a
+                href="profile.html"
+                class="profile _w-30 _h-30 rounded-pill middle overflow-hidden"
+              >
+                <i class="bi bi-person-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="section">
+      <div class="main-container-fluid mx-auto">
+        <div class="d-flex justify-content-between">
+          <div class="main-content h-auto position-relative">
+            <div
+              class="d-flex justify-content-between align-items-center search-header mb-4 mt-1 px-4"
+            >
+              <div
+                class="_h-40 _w-40 border-1 rounded-pill middle bg-white cursor menu-toggle"
+              >
+                <i class="bi bi-chevron-left fw-5 darkGray"></i>
+              </div>
+
+              <a
+                href="statistics.html"
+                class="_h-40 w-auto px-3 middle bg-white"
+              >
+                <span class="d-flex">
+                  <i class="bi bi-graph-up"> </i>
+                  <span class="mx-1">statistics</span>
+                </span>
+              </a>
+            </div>
+            <div class="px-4 mb-3">
+              <h1 class="fw-8 fs-22 text-uppercase blue">Ajouter Un BL</h1>
+            </div>
+
+            <div class="row px-4 gx-3 gy-3 mb-3">
+              <div class="bg-white rounded-4 px-4 py-4">
+                <div class="border-1 px-3 py-3 rounded-2 bg-white-1">
+                  <div class="mb-3">
+                    <h2 class="fs-13 blue">Reception</h2>
+                    <div class="line bg-silver mb-2"></div>
+                  </div>
+                  <form action="" method="post" id="reception" class="_form">
+                    <div class="row gx-3 mb-3">
+                      <div class="col-md-6">
+                        <div class="row gy-2">
+                          <div class="col-12">
+                            <label for="" class="fs-13 darkGray fw-5"
+                              >Numero BL</label
+                            >
+                            <input
+                              class="w-100 input px-2 py-2 rounded-2 fs-14 darkGray"
+                              type="text"
+                              name=""
+                              id=""
+                              placeholder="No 0000-0000-00"
+                            />
+                          </div>
+                          <div class="col-12">
+                            <label for="exampleDataList" class="fs-13 darkGray"
+                              >Nom Client</label
+                            >
+                            <select
+                              name=""
+                              id=""
+                              class="w-100 input px-2 py-2 rounded-2 fs-14 darkGray"
+                            >
+                              <option value="">Complet</option>
+                              <option value="">Incomplet</option>
+                            </select>
+                          </div>
+                          <div class="col-12">
+                            <label for="exampleDataList" class="fs-13 darkGray"
+                              >Nom Port</label
+                            >
+                            <select
+                              name=""
+                              id=""
+                              class="w-100 input px-2 py-2 rounded-2 fs-14 darkGray"
+                            >
+                              <option value="">Complet</option>
+                              <option value="">Incomplet</option>
+                            </select>
+                          </div>
+                          <div class="col-12">
+                            <label for="" class="fs-13 darkGray fw-5"
+                              >Date Reception</label
+                            >
+                            <input
+                              id="date2"
+                              class="w-100 input darkGray px-2 py-2 rounded-2 fs-14 cursor datetime-input"
+                              type="text"
+                              placeholder="mm / dd / yyy"
+                              readonly
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="row gy-2">
+                          <div class="col-12">
+                            <label for="" class="fs-13 darkGray fw-5"
+                              >Date Saisie</label
+                            >
+                            <input
+                              id="date2"
+                              class="w-100 input darkGray px-2 py-2 rounded-2 fs-14 cursor datetime-input"
+                              type="text"
+                              placeholder="mm / dd / yyy"
+                              readonly
+                            />
+                          </div>
+                          <div class="col-12">
+                            <label for="" class="fs-13 darkGray fw-5"
+                              >Nom Fournisseurs</label
+                            >
+                            <input
+                              class="w-100 input px-2 py-2 rounded-2 fs-14 darkGray"
+                              type="text"
+                              name=""
+                              id=""
+                              placeholder="nom client"
+                            />
+                          </div>
+                          <div class="col-12">
+                            <label for="exampleDataList" class="fs-13 darkGray"
+                              >Nom Agence</label
+                            >
+                            <select
+                              name=""
+                              id=""
+                              class="w-100 input px-2 py-2 rounded-2 fs-14 darkGray"
+                            >
+                              <option value="">Complet</option>
+                              <option value="">Incomplet</option>
+                            </select>
+                          </div>
+                          <div class="col-12">
+                            <label for="" class="fs-13 darkGray fw-5"
+                              >Date Arrivage Bateau</label
+                            >
+                            <input
+                              id="date2"
+                              class="w-100 input darkGray px-2 py-2 rounded-2 fs-14 darkGray cursor datetime-input"
+                              type="text"
+                              placeholder="mm / dd / yyy"
+                              readonly
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col">
+                        <div
+                          class="note-bl px-3 py-3 border-1 rounded-1 bg-white"
+                        >
+                          <span class="darkGray fs-12 text-uppercase mb-2"
+                            >notes</span
+                          >
+                          <div class="line bg-silver w-100 mb-2"></div>
+                          <textarea
+                            name=""
+                            id=""
+                            class="input px-2 py-2 w-100 darkGray fs-14 rounded-1"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <button
+                        type="submit"
+                        class="btn btn-form px-4 py-2 fs-14 mx-1"
+                      >
+                        Modifier
+                      </button>
+                      <button
+                        type="submit"
+                        class="btn btn-form px-4 py-2 fs-14 mx-1"
+                      >
+                        Ajouter
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="row px-4 gx-3 gy-3 mb-3">
+              <div class="bg-white rounded-4 px-4 py-4">
+                <div class="border-1 px-3 py-3 rounded-2 mb-3">
+                  <div class="mb-3">
+                    <h2 class="fs-13 blue">Document</h2>
+                    <div class="line bg-silver mb-2"></div>
+                  </div>
+                  <div class="tab-container">
+                    <div class="tabs d-flex justify-content-end gap-1">
+                      <button
+                        type="button"
+                        data-tab="tab1-1"
+                        class="tab-btn bg-white-1 fs-14 px-2 py-2 fw-4 border-1 darkGray active"
+                      >
+                        Ajouter Data
+                      </button>
+                      <button
+                        type="button"
+                        data-tab="tab1-2"
+                        class="tab-btn bg-white-1 fs-14 px-2 py-2 fw-4 border-1 darkGray"
+                      >
+                        List Data
+                      </button>
+                    </div>
+                    <div
+                      class="tab-content px-3 py-3 border-1 active"
+                      id="tab1-1"
+                    >
+                      <div class="px-3 py-2 border-1 rounded-2 bg-white-1">
+                        <form
+                          action=""
+                          method="post"
+                          id="document"
+                          class="_form"
+                        >
+                          <div class="row gx-3 mb-3">
+                            <div class="col-md-6">
+                              <label for="" class="fs-13 darkGray"
+                                >Date Reception</label
+                              >
+                              <input
+                                id="date1"
+                                class="w-100 darkGray fs-14 input px-2 py-2 rounded-2 cursor datetime-input"
+                                type="date"
+                                placeholder="MM / DD / YYYY"
+                                readonly
+                              />
+                            </div>
+                            <div class="col-md-6">
+                              <label
+                                for="exampleDataList"
+                                class="fs-13 darkGray"
+                                >Status</label
+                              >
+                              <select
+                                name=""
+                                id=""
+                                class="w-100 input px-2 py-2 rounded-2 fs-14 darkGray"
+                              >
+                                <option value="">Complet</option>
+                                <option value="">Incomplet</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col">
+                              <div
+                                class="note-bl px-3 py-3 border-1 rounded-1 bg-white"
+                              >
+                                <span class="darkGray fs-12 text-uppercase mb-2"
+                                  >notes</span
+                                >
+                                <div class="line bg-silver w-100 mb-2"></div>
+                                <textarea
+                                  name=""
+                                  id=""
+                                  class="input px-2 py-2 w-100 darkGray fs-14 rounded-1"
+                                ></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-end mb-2">
+                            <button
+                              type="submit"
+                              class="btn btn-form px-4 py-2 fs-14 mx-1"
+                            >
+                              Modifier
+                            </button>
+                            <button
+                              type="submit"
+                              class="btn btn-form px-4 py-2 fs-14 mx-1"
+                            >
+                              Ajouter
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="tab-content px-3 py-3 border-1" id="tab1-2">
+                      <div class="px-3 py-2 border-1 rounded-2 bg-white-1 mb-3">
+                        <form
+                          action=""
+                          method="post"
+                          id="document"
+                          class="_form"
+                        >
+                          <div class="row gy-2 mb-2">
+                            <div class="col-md-8">
+                              <div class="col-12 mb-2">
+                                <label for="" class="fs-13 darkGray"
+                                  >Date Reception</label
+                                >
+                                <input
+                                  id="date1"
+                                  class="w-100 darkGray fs-14 input px-2 py-2 rounded-2 cursor datetime-input"
+                                  type="date"
+                                  placeholder="MM / DD / YYYY"
+                                  readonly
+                                />
+                              </div>
+                              <div class="col-12 mb-3">
+                                <label
+                                  for="exampleDataList"
+                                  class="fs-13 darkGray"
+                                  >Status</label
+                                >
+                                <select
+                                  name=""
+                                  id=""
+                                  class="w-100 input px-2 py-2 rounded-2 fs-14 darkGray"
+                                >
+                                  <option value="">Complet</option>
+                                  <option value="">Incomplet</option>
+                                </select>
+                              </div>
+                              <div class="col-12">
+                                <div
+                                  class="note-bl px-3 py-3 border-1 rounded-1 bg-white"
+                                >
+                                  <span
+                                    class="darkGray fs-12 text-uppercase mb-2"
+                                    >notes</span
+                                  >
+                                  <div class="line bg-silver w-100 mb-2"></div>
+                                  <textarea
+                                    name=""
+                                    id=""
+                                    class="input px-2 py-2 w-100 darkGray fs-14 rounded-1"
+                                  ></textarea>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <button
+                                type="submit"
+                                class="_btn bg-whiteChalk-1 px-4 py-2 fs-14 mt-4 w-100"
+                              >
+                                Modifier
+                              </button>
+                              <button
+                                type="submit"
+                                class="_btn bg-whiteChalk-1 px-4 py-2 fs-14 mt-4 w-100"
+                              >
+                                Supprimer
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row px-4 gx-3 gy-3 mb-3">
+              <div class="bg-white rounded-4 px-4 py-4">
+                <div class="border-1 px-3 py-3 rounded-2">
+                  <div class="mb-3">
+                    <h2 class="fs-13 blue">Sydonia</h2>
+                    <div class="line bg-silver mb-2"></div>
+                  </div>
+                  <div class="px-3 py-2 border-1 rounded-2 bg-white-1">
+                    <form action="" method="post" id="sydonia" class="_form">
+                      <div class="row gx-3 mb-3">
+                        <div class="col-md-4">
+                          <label for="" class="fs-13 darkGray"
+                            >NUmero Dossier</label
+                          >
+                          <input
+                            class="w-100 darkGray fs-14 input px-2 py-2 rounded-2"
+                            type="text"
+                            placeholder="No 0000-0000-0000"
+                          />
+                        </div>
+                        <div class="col-md-4">
+                          <label for="" class="fs-13 darkGray"
+                            >Date Reception</label
+                          >
+                          <input
+                            id="date1"
+                            class="w-100 darkGray fs-14 input px-2 py-2 rounded-2 cursor datetime-input"
+                            type="date"
+                            placeholder="MM / DD / YYYY"
+                            readonly
+                          />
+                        </div>
+                        <div class="col-md-4">
+                          <label for="exampleDataList" class="fs-13 darkGray"
+                            >Status</label
+                          >
+                          <select
+                            name=""
+                            id=""
+                            class="w-100 input px-2 py-2 rounded-2 fs-14 darkGray"
+                          >
+                            <option value="">Complet</option>
+                            <option value="">Incomplet</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div
+                            class="note-bl px-3 py-3 border-1 rounded-1 bg-white"
+                          >
+                            <span class="darkGray fs-12 text-uppercase mb-2"
+                              >notes</span
+                            >
+                            <div class="line bg-silver w-100 mb-2"></div>
+                            <textarea
+                              name=""
+                              id=""
+                              class="input px-4 py-4 w-100 darkGray fs-14 rounded-1"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end mb-2">
+                        <button
+                          type="submit"
+                          class="btn btn-form px-4 py-2 fs-14 mx-1"
+                        >
+                          Modifier
+                        </button>
+                        <button
+                          type="submit"
+                          class="btn btn-form px-4 py-2 fs-14 mx-1"
+                        >
+                          Ajouter
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row px-4 gx-3 gy-3 mb-3">
+              <div class="bg-white rounded-4 px-4 py-4">
+                <div class="border-1 px-3 py-3 rounded-2">
+                  <div class="mb-3">
+                    <h2 class="fs-13 blue">Deposition</h2>
+                    <div class="line bg-silver mb-2"></div>
+                  </div>
+                  <div class="px-3 py-2 border-1 rounded-2 bg-white-1">
+                    <form action="" method="post" id="deposition" class="_form">
+                      <div class="row gx-3 mb-3">
+                        <div class="col-md-6">
+                          <label for="" class="fs-13 darkGray"
+                            >Date Reception</label
+                          >
+                          <input
+                            id="date1"
+                            class="w-100 darkGray fs-14 input px-2 py-2 rounded-2 cursor datetime-input"
+                            type="date"
+                            placeholder="MM / DD / YYYY"
+                            readonly
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label for="exampleDataList" class="fs-13 darkGray"
+                            >Status</label
+                          >
+                          <select
+                            name=""
+                            id=""
+                            class="w-100 input px-2 py-2 rounded-2 fs-14 darkGray"
+                          >
+                            <option value="">Complet</option>
+                            <option value="">Incomplet</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div
+                            class="note-bl px-3 py-3 border-1 rounded-1 bg-white"
+                          >
+                            <span class="darkGray fs-12 text-uppercase mb-2"
+                              >notes</span
+                            >
+                            <div class="line bg-silver w-100 mb-2"></div>
+                            <textarea
+                              name=""
+                              id=""
+                              class="input px-4 py-4 w-100 darkGray fs-14 rounded-1"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end mb-2">
+                        <button
+                          type="submit"
+                          class="btn btn-form px-4 py-2 fs-14 mx-1"
+                        >
+                          Modifier
+                        </button>
+                        <button
+                          type="submit"
+                          class="btn btn-form px-4 py-2 fs-14 mx-1"
+                        >
+                          Ajouter
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row px-4 gx-3 gy-3 mb-3">
+              <div class="bg-white rounded-4 px-4 py-4">
+                <div class="border-1 px-3 py-3 rounded-2">
+                  <div class="mb-3">
+                    <h2 class="fs-13 blue">Liquidation</h2>
+                    <div class="line bg-silver mb-2"></div>
+                  </div>
+                  <div class="tab-container">
+                    <div class="tabs d-flex justify-content-end gap-1">
+                      <button
+                        type="button"
+                        data-tab="tab2-1"
+                        class="tab-btn bg-white-1 fs-14 px-2 py-2 fw-4 border-1 darkGray active"
+                      >
+                        Ajouter Data
+                      </button>
+                      <button
+                        type="button"
+                        data-tab="tab2-2"
+                        class="tab-btn bg-white-1 fs-14 px-2 py-2 fw-4 border-1 darkGray"
+                      >
+                        List Data
+                      </button>
+                    </div>
+                    <div
+                      class="tab-content px-3 py-3 border-1 active"
+                      id="tab2-1"
+                    >
+                      <div class="px-3 py-2 border-1 rounded-2 bg-white-1">
+                        <form
+                          action=""
+                          method="post"
+                          id="liquidation"
+                          class="_form"
+                        >
+                          <div class="row gx-3 mb-3">
+                            <div class="col-md-4">
+                              <label for="" class="fs-13 darkGray"
+                                >Numero Liquidation</label
+                              >
+                              <input
+                                class="w-100 darkGray fs-14 input px-2 py-2 rounded-2"
+                                type="text"
+                                placeholder="No 0000-0000-0000"
+                              />
+                            </div>
+                            <div class="col-md-4">
+                              <label for="" class="fs-13 darkGray"
+                                >Date Reception</label
+                              >
+                              <input
+                                id="date1"
+                                class="w-100 darkGray fs-14 input px-2 py-2 rounded-2 cursor datetime-input"
+                                type="date"
+                                placeholder="MM / DD / YYYY"
+                                readonly
+                              />
+                            </div>
+                            <div class="col-md-4">
+                              <label
+                                for="exampleDataList"
+                                class="fs-13 darkGray"
+                                >Status</label
+                              >
+                              <select
+                                name=""
+                                id=""
+                                class="w-100 input px-2 py-2 rounded-2 fs-14 darkGray"
+                              >
+                                <option value="">Complet</option>
+                                <option value="">Incomplet</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col">
+                              <div
+                                class="note-bl px-3 py-3 border-1 rounded-1 bg-white"
+                              >
+                                <span class="darkGray fs-12 text-uppercase mb-2"
+                                  >notes</span
+                                >
+                                <div class="line bg-silver w-100 mb-2"></div>
+                                <textarea
+                                  name=""
+                                  id=""
+                                  class="input px-4 py-4 w-100 darkGray fs-14 rounded-1"
+                                ></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-end mb-2">
+                            <button
+                              type="submit"
+                              class="btn btn-form px-4 py-2 fs-14 mx-1"
+                            >
+                              Modifier
+                            </button>
+                            <button
+                              type="submit"
+                              class="btn btn-form px-4 py-2 fs-14 mx-1"
+                            >
+                              Ajouter
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="tab-content px-3 py-3 border-1" id="tab2-2">
+                      <div class="px-3 py-2 border-1 rounded-2 bg-white-1 mb-3">
+                        <form
+                          action=""
+                          method="post"
+                          id="document"
+                          class="_form"
+                        >
+                          <div class="row gy-2 mb-2">
+                            <div class="col-md-8">
+                              <div class="col-12 mb-2">
+                                <label for="" class="fs-13 darkGray"
+                                  >No Dossier</label
+                                >
+                                <input
+                                  class="w-100 darkGray fs-14 input px-2 py-2 rounded-2"
+                                  type="text"
+                                  placeholder="0000-0000-0000"
+                                  readonly
+                                />
+                              </div>
+                              <div class="col-12 mb-2">
+                                <label for="" class="fs-13 darkGray"
+                                  >Date Reception</label
+                                >
+                                <input
+                                  id="date1"
+                                  class="w-100 darkGray fs-14 input px-2 py-2 rounded-2 cursor datetime-input"
+                                  type="date"
+                                  placeholder="MM / DD / YYYY"
+                                  readonly
+                                />
+                              </div>
+                              <div class="col-12 mb-3">
+                                <label
+                                  for="exampleDataList"
+                                  class="fs-13 darkGray"
+                                  >Status</label
+                                >
+                                <select
+                                  name=""
+                                  id=""
+                                  class="w-100 input px-2 py-2 rounded-2 fs-14 darkGray"
+                                >
+                                  <option value="">Complet</option>
+                                  <option value="">Incomplet</option>
+                                </select>
+                              </div>
+                              <div class="col-12">
+                                <div
+                                  class="note-bl px-3 py-3 border-1 rounded-1 bg-white"
+                                >
+                                  <span
+                                    class="darkGray fs-12 text-uppercase mb-2"
+                                    >notes</span
+                                  >
+                                  <div class="line bg-silver w-100 mb-2"></div>
+                                  <textarea
+                                    name=""
+                                    id=""
+                                    class="input px-2 py-2 w-100 darkGray fs-14 rounded-1"
+                                  ></textarea>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <button
+                                type="submit"
+                                class="_btn bg-whiteChalk-1 px-4 py-2 fs-14 mt-4 w-100"
+                              >
+                                Modifier
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row px-4 gx-3 gy-3 mb-3">
+              <div class="bg-white rounded-4 px-4 py-4">
+                <div class="border-1 px-3 py-3 rounded-2">
+                  <div class="mb-3">
+                    <h2 class="fs-13 blue">Cheques</h2>
+                    <div class="line bg-silver mb-2"></div>
+                  </div>
+                  <div class="px-3 py-2 border-1 rounded-2 bg-white-1">
+                    <form action="" method="post" id="cheques" class="_form">
+                      <div class="row gx-3 mb-3">
+                        <div class="col-md-6">
+                          <label for="" class="fs-13 darkGray"
+                            >Date Reception</label
+                          >
+                          <input
+                            id="date1"
+                            class="w-100 darkGray fs-14 input px-2 py-2 rounded-2 cursor datetime-input"
+                            type="date"
+                            placeholder="MM / DD / YYYY"
+                            readonly
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label for="exampleDataList" class="fs-13 darkGray"
+                            >Status</label
+                          >
+                          <select
+                            name=""
+                            id=""
+                            class="w-100 input px-2 py-2 rounded-2 fs-14 darkGray"
+                          >
+                            <option value="">Complet</option>
+                            <option value="">Incomplet</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div
+                            class="note-bl px-3 py-3 border-1 rounded-1 bg-white"
+                          >
+                            <span class="darkGray fs-12 text-uppercase mb-2"
+                              >notes</span
+                            >
+                            <div class="line bg-silver w-100 mb-2"></div>
+                            <textarea
+                              name=""
+                              id=""
+                              class="input px-4 py-4 w-100 darkGray fs-14 rounded-1"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end mb-2">
+                        <button
+                          type="submit"
+                          class="btn btn-form px-4 py-2 fs-14 mx-1"
+                        >
+                          Modifier
+                        </button>
+                        <button
+                          type="submit"
+                          class="btn btn-form px-4 py-2 fs-14 mx-1"
+                        >
+                          Ajouter
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row px-4 gx-3 gy-3 mb-3">
+              <div class="bg-white rounded-4 px-4 py-4">
+                <div class="border-1 px-3 py-3 rounded-2">
+                  <div class="mb-3">
+                    <h2 class="fs-13 blue">Paiement</h2>
+                    <div class="line bg-silver mb-2"></div>
+                  </div>
+                  <div class="px-3 py-2 border-1 rounded-2 bg-white-1">
+                    <form action="" method="post" id="paiement" class="_form">
+                      <div class="row gx-3 mb-3">
+                        <div class="col-md-6">
+                          <label for="" class="fs-13 darkGray"
+                            >Date Reception</label
+                          >
+                          <input
+                            id="date1"
+                            class="w-100 darkGray fs-14 input px-2 py-2 rounded-2 cursor datetime-input"
+                            type="date"
+                            placeholder="MM / DD / YYYY"
+                            readonly
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label for="exampleDataList" class="fs-13 darkGray"
+                            >Status</label
+                          >
+                          <select
+                            name=""
+                            id=""
+                            class="w-100 input px-2 py-2 rounded-2 fs-14 darkGray"
+                          >
+                            <option value="">Complet</option>
+                            <option value="">Incomplet</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div
+                            class="note-bl px-3 py-3 border-1 rounded-1 bg-white"
+                          >
+                            <span class="darkGray fs-12 text-uppercase mb-2"
+                              >notes</span
+                            >
+                            <div class="line bg-silver w-100 mb-2"></div>
+                            <textarea
+                              name=""
+                              id=""
+                              class="input px-4 py-4 w-100 darkGray fs-14 rounded-1"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end mb-2">
+                        <button
+                          type="submit"
+                          class="btn btn-form px-4 py-2 fs-14 mx-1"
+                        >
+                          Modifier
+                        </button>
+                        <button
+                          type="submit"
+                          class="btn btn-form px-4 py-2 fs-14 mx-1"
+                        >
+                          Ajouter
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row px-4 gx-3 gy-3 mb-3">
+              <div class="bg-white rounded-4 px-4 py-4">
+                <div class="border-1 px-3 py-3 rounded-2">
+                  <div class="mb-3">
+                    <h2 class="fs-13 blue">Livraison</h2>
+                    <div class="line bg-silver mb-2"></div>
+                  </div>
+                  <div class="px-3 py-2 border-1 rounded-2 bg-white-1">
+                    <form action="" method="post" id="livraison" class="_form">
+                      <div class="row gx-3 mb-3">
+                        <div class="col-md-6">
+                          <label for="" class="fs-13 darkGray"
+                            >Date Reception</label
+                          >
+                          <input
+                            id="date1"
+                            class="w-100 darkGray fs-14 input px-2 py-2 rounded-2 cursor datetime-input"
+                            type="date"
+                            placeholder="MM / DD / YYYY"
+                            readonly
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label for="exampleDataList" class="fs-13 darkGray"
+                            >Status</label
+                          >
+                          <select
+                            name=""
+                            id=""
+                            class="w-100 input px-2 py-2 rounded-2 fs-14 darkGray"
+                          >
+                            <option value="">Complet</option>
+                            <option value="">Incomplet</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div
+                            class="note-bl px-3 py-3 border-1 rounded-1 bg-white"
+                          >
+                            <span class="darkGray fs-12 text-uppercase mb-2"
+                              >notes</span
+                            >
+                            <div class="line bg-silver w-100 mb-2"></div>
+                            <textarea
+                              name=""
+                              id=""
+                              class="input px-4 py-4 w-100 darkGray fs-14 rounded-1"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end mb-2">
+                        <button
+                          type="submit"
+                          class="btn btn-form px-4 py-2 fs-14 mx-1"
+                        >
+                          Modifier
+                        </button>
+                        <button
+                          type="submit"
+                          class="btn btn-form px-4 py-2 fs-14 mx-1"
+                        >
+                          Ajouter
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- footer -->
+            <footer class="py-4 bg-navy px-4">
+              <div class="row justify-content-center gx-2">
+                <div class="col-md-4">
+                  <ul class="footer-link">
+                    <li><a href="home" class="fs-14">Accueil</a></li>
+                    <li><a href="agences.html" class="fs-14">Agences</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="footer-link">
+                    <li><a href="livreur.html" class="fs-14">Livreurs</a></li>
+                    <li>
+                      <a href="fournisseurs.html" class="fs-14">Fournisseurs</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="footer-link">
+                    <li><a href="client.html" class="fs-14">Clients</a></li>
+                    <li><a href="port.html" class="fs-14">Ports</a></li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+          </div>
+          <div class="sidebar bg-white mt-1">
+            <div class="title py-5 mb-3">
+              <h2 class="fs-20 px-4 blue">
+                <i class="bi bi-link fs-22 fw-800"></i> Navigation Rapide
+              </h2>
+            </div>
+            <div class="box-link px-3">
+              <ul class="box-list mx-0 px-0 mb-4">
+                <span class="light-blue fs-13 mb-2 d-block fw-5"
+                  >Recherche par liste</span
+                >
+                <div class="line bg-silver mb-4"></div>
+                <li class="px-2 py-2"><a href="client.html">Clients</a></li>
+                <li class="px-2 py-2">
+                  <a href="fournisseurs.html">Fournisseurs</a>
+                </li>
+                <li class="px-2 py-2"><a href="port.html">Port</a></li>
+                <li class="px-2 py-2"><a href="agences.html">Agences</a></li>
+              </ul>
+              <span class="light-blue fs-13 mb-2 d-block fw-5"
+                >Recherche par critere</span
+              >
+              <div class="line bg-silver mb-4"></div>
+              <div class="searchByCritere d-flex flex-wrap">
+                <a
+                  href="listeBl.html"
+                  class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
+                  >Liste BL</a
+                >
+                <a
+                  href="searchBL.html"
+                  class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
+                  >Numero BL</a
+                >
+                <a
+                  href=""
+                  class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
+                  >Dossiers</a
+                >
+                <a
+                  href=""
+                  class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
+                  >Containeur</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <script src="../JS/datepicker.js"></script>
+    <script src="../JS/tab.js"></script>
+    <script src="../JS/script.js"></script>
+    <script src="../JS/accordion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

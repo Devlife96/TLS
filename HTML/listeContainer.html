@@ -28,50 +28,46 @@
   </head>
   <body>
     <header class="fixed-top">
-      <nav class="main-menu w-100 bg-white h-auto bottom-1 position-relative">
-        <div class="container-fluid">
-          <div class="main-container-fluid mx-auto">
-            <div class="d-flex justify-content-between align-items-center">
-              <a class="logo" href="home.html">
-                <img
-                  src="../IMG/logo/tls-logo.png"
-                  alt=""
-                  srcset=""
-                  class="w-auto h-100 img-fluid"
-                />
+      <nav class="main-menu w-100 bg-white h-auto bottom-1">
+        <div class="main-container-fluid mx-auto">
+          <div class="d-flex justify-content-between align-items-center">
+            <a class="logo" href="home.html">
+              <img
+                src="../IMG/logo/tls-logo.png"
+                alt=""
+                srcset=""
+                class="w-auto h-100 img-fluid"
+              />
+            </a>
+
+            <div class="d-flex justify-content-center align-items-center">
+              <ul class="navigation mt-3">
+                <li class="navigation-item">
+                  <a class="py-2" href="home.html">Accueil</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="py-2" href="listeAgence.html">Agences</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="py-2" href="livreur.html">Livreurs</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="py-2" href="listeClient.html">Clients</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="py-2 active" href="#">Utilisateurs</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="py-2" href="listePort.html">Ports</a>
+                </li>
+              </ul>
+              <div class="divide bg-silver mx-3"></div>
+              <a
+                href="profile.html"
+                class="profile _w-30 _h-30 rounded-pill middle overflow-hidden"
+              >
+                <i class="bi bi-person-circle"></i>
               </a>
-              <!-- Menu Toggle Button (Visible on Mobile) -->
-              <div class="menuToggle"><i class="bi bi-list darkGray"></i></div>
-              
-              <div class="container-navigation">
-                <ul class="navigation mt-3">
-                  <li class="navigation-item">
-                    <a class="py-2" href="home.html">Accueil</a>
-                  </li>
-                  <li class="navigation-item">
-                    <a class="py-2 active" href="#">Agences</a>
-                  </li>
-                  <li class="navigation-item">
-                    <a class="py-2" href="livreur.html">Livreurs</a>
-                  </li>
-                  <li class="navigation-item">
-                    <a class="py-2" href="listeClient.html">Clients</a>
-                  </li>
-                  <li class="navigation-item">
-                    <a class="py-2" href="listeUtilisateur.html">Utilisateurs</a>
-                  </li>
-                  <li class="navigation-item">
-                    <a class="py-2" href="listePort.html">Ports</a>
-                  </li>
-                </ul>
-                <div class="divide bg-silver mx-3"></div>
-                <a
-                  href="profile.html"
-                  class="profile _w-30 _h-30 rounded-pill middle overflow-hidden"
-                >
-                  <i class="bi bi-person-circle"></i>
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -80,16 +76,16 @@
     <section class="section">
       <div class="main-container-fluid mx-auto">
         <div class="d-flex justify-content-between">
-          <div class="main-content h-auto">
+          <div class="main-content h-auto position-relative">
             <div
-              class="d-flex justify-content-center align-items-center search-header mt-1 gap-1"
+              class="d-flex justify-content-center align-items-center search-header mb-2 mt-1"
             >
               <div
-                class="_h-40 _w-40 border-1 rounded-pill middle bg-white cursor  menu-toggle"
+                class="_h-40 _w-40 border-1 rounded-pill middle bg-white cursor mx-2 menu-toggle"
               >
                 <i class="bi bi-chevron-left fw-5 darkGray"></i>
               </div>
-              <div class="mx-1">
+              <div class="">
                 <form action="" class="search">
                   <input
                     type="text"
@@ -104,29 +100,25 @@
                 </form>
               </div>
 
-              <a
-                href="addbl.html"
-                class="_h-40 _w-40 middle bg-white  _btn reveal-data"
-              >
+              <a class="_h-40 _w-40  middle bg-white mx-2 _btn">
                 <i class="bi bi-plus-lg fw-6"></i>
               </a>
               <a href="statistics.html" class="_h-40 _w-40 middle bg-white"
                 ><i class="bi bi-graph-up"></i
               ></a>
             </div>
-            <div class=" mb-4 py-4">
-              <div class="container px-4">
-                <div
+            <div class="px-4 mb-4 py-4">
+              <div
                 class="d-flex justify-content-between align-items-center mb-3"
               >
                 <div class="">
                   <span class="darkGray fs-13">50 Resultat(s)</span>
-                  <h3 class="blue fw-6 text-uppercase fs-14">Liste des Agences</h3>
+                  <h3 class="blue fw-6 text-uppercase fs-14">Liste des Containeurs</h3>
                 </div>
                 <div class="">
                   <button data-target="#modal1" id="openModal1" class="_h-40 px-2 middle bg-white mx-2 _btn reveal-data d-flex align-items-center gap-1">
                     <i class="bi bi-plus-lg fw-6"></i>
-                    <span>Ajouter Agence</span> 
+                    <span>Ajouter Containeur</span> 
                   </button>
                 </div>
               </div>
@@ -134,7 +126,10 @@
               <table class="table result">
                 <thead class="thead-custom">
                   <tr>
-                    <th class="fs-18 darkGray-4">Nom Agence</th>
+                    <th class="fs-18 darkGray-4">No Containeur</th>
+                    <th class="fs-18 darkGray-4">Seal</th>
+                    <th class="fs-1m darkGray-4">Size</th>
+                    <th class="fs-18 darkGray-4">Livreur</th>
                     <th class="fs-18 darkGray-4">action</th>
                   </tr>
                 </thead>
@@ -142,15 +137,25 @@
                  <div class="">
                     <tr class="table-line cursor" data-toggle="row1">
                         <td class="gray-3">User-001</td>
+                        <td class="gray-3">profile.png</td>
+                        <td class="gray-3">User-001</td>
+                        <td class="gray-3">profile.png</td>
                         <td class="gray-3">
                             <div class="d-flex align-items-center gap-1">
-                             
+                              <a
+                                href="statistics.html"
+                                class="_h-25 _w-25 _btn  middle bg-white border-1"
+                              >
+                              <i class="bi bi-pencil-square fs-13"></i>
+                                </span>
+                              </a>
                               <button
                               data-target="#modal2"
                               id="openModal2"
                                 class="_h-25 _w-25 _btn  middle bg-white border-1 reveal-data"
                               >
-                              <i class="bi bi-pencil-square fs-13"></i>
+                              <i class="bi bi-activity fs-13"></i>
+                                </span>
                               </button>
                               <button
                               data-target="#modal3"
@@ -158,6 +163,7 @@
                                   class="_h-25 _w-25 _btn  middle bg-white border-1 reveal-data"
                                 >
                                 <i class="bi bi-trash fs-13"></i>
+                                  </span>
                                 </button>
                             </div>
                           </td>
@@ -209,15 +215,24 @@
                  <div class="">
                     <tr class="table-line cursor mb-2" data-toggle="row2">
                         <td class="gray-3">User-001</td>
+                        <td class="gray-3">profile.png</td>
+                        <td class="gray-3">User-001</td>
+                        <td class="gray-3">profile.png</td>
                         <td class="gray-3">
                             <div class="d-flex align-items-center gap-1">
-                             
+                              <a
+                                href="statistics.html"
+                                class="_h-25 _w-25 _btn  middle bg-white border-1"
+                              >
+                              <i class="bi bi-pencil-square fs-13"></i>
+                                </span>
+                              </a>
                               <button
                               data-target="#modal2"
                               id="openModal2"
                                 class="_h-25 _w-25 _btn  middle bg-white border-1 reveal-data"
                               >
-                              <i class="bi bi-pencil-square fs-13"></i>
+                              <i class="bi bi-activity fs-13"></i>
                                 </span>
                               </button>
                               <button
@@ -278,15 +293,24 @@
                  <div class="">
                     <tr class="table-line cursor mb-2" data-toggle="row3">
                         <td class="gray-3">User-001</td>
+                        <td class="gray-3">profile.png</td>
+                        <td class="gray-3">User-001</td>
+                        <td class="gray-3">profile.png</td>
                         <td class="gray-3">
                           <div class="d-flex align-items-center gap-1">
-                            
+                            <a
+                              href="statistics.html"
+                              class="_h-25 _w-25 _btn  middle bg-white border-1"
+                            >
+                            <i class="bi bi-pencil-square fs-13"></i>
+                              </span>
+                            </a>
                             <button
                             data-target="#modal2"
                               id="openModal"
                                 class="_h-25 _w-25 _btn  middle bg-white border-1 reveal-data"
                               >
-                              <i class="bi bi-pencil-square fs-13"></i>
+                              <i class="bi bi-activity fs-13"></i>
                                 </span>
                               </button>
                               <button
@@ -348,125 +372,161 @@
                  
                 </tbody>
               </table>
-              </div>
             </div>
-            <!-- <div class="px-4 mb-4 py-4">
-              <span class="darkGray fs-13">50 Resultat(s)</span>
-              <h3 class="blue fw-6 text-uppercase fs-14 mb-3">Liste Agences</h3>
-              <div class="line bg-silver mb-4"></div>
-              <table class="table result">
-                <thead class="thead-custom">
-                  <tr>
-                    <th class="fs-18 urbanist-medium darkGray-4">Nom</th>
-                    <th class="fs-18 urbanist-medium darkGray-4">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="gray-3">User-001</td>
-                    <td class="gray-3">profile.png</td>
-                  </tr>
-                  <tr>
-                    <td class="gray-3">User-001</td>
-                    <td class="gray-3">profile.png</td>
-                  </tr>
-                  <tr>
-                    <td class="gray-3">User-001</td>
-                    <td class="gray-3">profile.png</td>
-                  </tr>
-                  <tr>
-                    <td class="gray-3">User-001</td>
-                    <td class="gray-3">profile.png</td>
-                  </tr>
-                  <tr>
-                    <td class="gray-3">User-001</td>
-                    <td class="gray-3">profile.png</td>
-                  </tr>
-                  <tr>
-                    <td class="gray-3">User-001</td>
-                    <td class="gray-3">profile.png</td>
-                  </tr>
-                  <tr>
-                    <td class="gray-3">User-001</td>
-                    <td class="gray-3">profile.png</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div> -->
-            <!-- footer -->
-            <footer class="py-4 bg-navy">
-              <div class="container px-4">
-                <div class="row justify-content-center">
-                  <div class="col-4 py-2">
-                    <ul class="footer-link">
-                      <li><a href="home" class="fs-14">Accueil</a></li>
-                      <li><a href="agences.html" class="fs-14">Agences</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-4 py-2">
-                    <ul class="footer-link">
-                      <li><a href="livreur.html" class="fs-14">Livreurs</a></li>
-                      <li>
-                        <a href="fournisseurs.html" class="fs-14">Fournisseurs</a>
-                      </li>
-                  </div>
-                  <div class="col-4 py-2">
-                    <ul class="footer-link">
-                      <li><a href="client.html" class="fs-14">Clients</a></li>
-                      <li><a href="port.html" class="fs-14">Ports</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-          </footer>
-            <div
-              class="modal-form rounded-3 border-1 position-fixed bg-white h-auto" id="modal1"
-            >
-              <div
-                class="w-100 bg-whiteChalk-1 py-3 px-4 bottom-1 d-flex justify-content-between align-items-center"
-              >
-                <h3 class="darkGray fs-12 fw-5 text-uppercase mt-2">
-                  Ajouter Agence
-                </h3>
-                <div
-                  class="_h-25 _w-25 rounded-pill border-1 middle close cursor"
-                >
-                  <i class="bi bi-x darkGray fw-5"></i>
-                </div>
-              </div>
-              <div class="px-4 py-4">
-                <form action="" method="post">
-                  <div class="mb-2">
-                    <label for="" class="fs-13 darkGray fw-5 mb-2"
-                    >Nom Agence</label
-                  >
-                    <input
-                      class="w-100 input px-4 py-2 rounded-3 fs-14 darkGray"
-                      type="text"
-                      name=""
-                      id=""
-                      placeholder="Nom agence"
-                    />
-                  </div>
-                  <div class="d-flex justify-content-end">
-                    <button class="btn btn-form px-4 py-1 fs-14">
-                      Ajouter
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-
            
-            <!-- Modal 2 -->
-            <div
-              class="modal-form rounded-3 border-1 position-fixed bg-white h-auto"
-              id="modal2"
-            >
+            <!-- footer -->
+            <footer class="py-4 bg-navy px-4">
+              <div class="row justify-content-center gx-2">
+                <div class="col-md-4">
+                  <ul class="footer-link">
+                    <li><a href="home" class="fs-14">Accueil</a></li>
+                    <li><a href="agences.html" class="fs-14">Agences</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="footer-link">
+                    <li><a href="livreur.html" class="fs-14">Livreurs</a></li>
+                    <li>
+                      <a href="fournisseurs.html" class="fs-14">Fournisseurs</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="footer-link">
+                    <li><a href="client.html" class="fs-14">Clients</a></li>
+                    <li><a href="port.html" class="fs-14">Ports</a></li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+
+      
+            <!-- Modal 1 -->
+            <div class="modal-form rounded-3 border-1 position-fixed bg-white h-auto" id="modal1">
               <div class="modal-content">
-                <div
-                  class="_modal-header bg-whiteChalk-1 w-100 py-4 px-4 mb-3 bottom-1 d-flex justify-content-between align-items-center"
+                <div class="_modal-header bg-whiteChalk-1 w-100 py-4 px-4 mb-3 bottom-1 d-flex justify-content-between align-items-center">
+                  <h3 class="darkGray fs-12 fw-5 text-uppercase mt-2">
+                    Ajouter Containeur
+                  </h3>
+                  <div
+                    class="_h-25 _w-25 rounded-pill border-1 middle close cursor"
+                  >
+                    <i class="bi bi-x darkGray fw-5"></i>
+                  </div>
+                </div>
+                <div class="modal-body px-4 ">
+                  <form action="" method="post" class="px-3 py-3 border-1">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="mb-2 w-100">
+                          <label for="" class="fs-13 darkGray"
+                                >No Containeur</label
+                              >
+                          <input
+                            class="w-100 input px-4 py-2 rounded-3 fs-14 darkGray"
+                            type="phone"
+                            name=""
+                            id=""
+                            placeholder="000-0000-00"
+                          />
+                        </div>
+                        <div class="mb-2 w-100">
+                          <label for="" class="fs-13 darkGray"
+                                >Size</label
+                              >
+                          <input
+                            class="w-100 input px-4 py-2 rounded-3 fs-14 darkGray"
+                            type="number"
+                            name=""
+                            id=""
+                            placeholder="20"
+                          />
+                        </div>
+                        <div class="mb-3 w-100">
+                          <label for="" class="fs-13 darkGray"
+                                >Plaque</label
+                              >
+                          <input
+                            class="w-100 input px-4 py-2 rounded-3 fs-14 darkGray"
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="00-00000-000"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-2 w-100">
+                          <label for="" class="fs-13 darkGray"
+                                >Seal</label
+                              >
+                          <input
+                            class="w-100 input px-4 py-2 rounded-3 fs-14 darkGray"
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="000-0000-00"
+                          />
+                        </div>
+                        <div class="mb-2 w-100">
+                          <label for="" class="fs-13 darkGray"
+                                >Livreur</label
+                              >
+                          <input
+                            class="w-100 input px-4 py-2 rounded-3 fs-14 darkGray"
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="john Doe"
+                          />
+                        </div>
+                        <div class="mb-3 w-100">
+                          <label for="" class="fs-13 darkGray"
+                                >Nom Chauffeur</label
+                              >
+                          <input
+                            class="w-100 input px-4 py-2 rounded-3 fs-14 darkGray"
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="John Doe"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col">
+                        <div
+                          class="note-bl px-3 py-3 border-1 rounded-1 bg-white"
+                        >
+                          <span class="darkGray fs-12 text-uppercase mb-2"
+                            >Description</span
+                          >
+                          <div class="line bg-silver w-100 mb-2"></div>
+                          <textarea
+                            name=""
+                            id=""
+                            class="input px-2 py-2 w-100 darkGray fs-14 rounded-1"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="d-flex justify-content-end">
+                      <button class="btn btn-form px-4 py-1 fs-14">
+                        Ajouter
+                      </button>
+                    </div>
+                  </form>
+                </div>
                 >
+              </div>
+            </div>
+            <!-- Modal 2 -->
+            <div class="modal-form rounded-3 border-1 position-fixed bg-white h-auto" id="modal2">
+              <div class="modal-content">
+                <div class="_modal-header bg-whiteChalk-1 w-100 py-4 px-4 mb-3 bottom-1 d-flex justify-content-between align-items-center">
                   <h3 class="darkGray fs-12 fw-5 text-uppercase mt-2">
                     Gerer Containeur
                   </h3>
@@ -476,27 +536,56 @@
                     <i class="bi bi-x darkGray fw-5"></i>
                   </div>
                 </div>
-                <div class="modal-body px-4">
-                  <form
-                    action=""
-                    method="post"
-                    class="px-3 py-3 mb-3 border-1 _form"
-                  >
+                <div class="modal-body px-4 ">
+                  <form action="" method="post" class="px-3 py-3 mb-3 border-1 _form">
                     <div class="row">
-                      <div class="col-12 mb-2">
-                        <label for="" class="fs-13 darkGray fw-5 mb-2"
-                    >Nom Agence</label
-                  >
-                    <input
-                      class="w-100 input px-4 py-2 rounded-3 fs-14 darkGray"
-                      type="text"
-                      name=""
-                      id=""
-                      placeholder="Nom agence"
-                    />
+                      <div class="col-12">
+                        <div class="mb-2 w-100">
+                          <label for="" class="fs-13 darkGray fw-5"
+                          >Date Saisie</label
+                        >
+                        <input
+                          id="date2"
+                          class="w-100 input darkGray px-2 py-2 rounded-2 fs-14 cursor datetime-input"
+                          type="date"
+                          placeholder="mm / dd / yyy"
+                          readonly
+                        />
+                        </div>
+                        <div class="mb-2 w-100">
+                          <label for="exampleDataList" class="fs-13 darkGray"
+                              >Nom Agence</label
+                            >
+                            <input
+                              class="w-100 input px-2 py-2 rounded-2 fs-14 darkGray"
+                              list="datalistOptions"
+                              id="exampleDataList"
+                              placeholder="choisir Agence"
+                            />
+                            <datalist id="datalistOptions">
+                              <option value="complete">complete</option>
+                              <option value="incomplet">incomplet</option>
+                            </datalist>
+                        </div>
+                        <div class="mb-3 w-100">
+                          <label for="exampleDataList" class="fs-13 darkGray"
+                              >Nom Agence</label
+                            >
+                            <input
+                              class="w-100 input px-2 py-2 rounded-2 fs-14 darkGray"
+                              list="datalistOptions"
+                              id="exampleDataList"
+                              placeholder="choisir Agence"
+                            />
+                            <datalist id="datalistOptions">
+                              <option value="complete">complete</option>
+                              <option value="incomplet">incomplet</option>
+                            </datalist>
+                        </div>
                       </div>
                     </div>
-
+                    
+                    
                     <div class="d-flex justify-content-end">
                       <button class="btn btn-form px-4 py-1 fs-14">
                         Ajouter
@@ -507,14 +596,9 @@
               </div>
             </div>
             <!-- Modal 2 -->
-            <div
-              class="modal-form rounded-3 border-1 position-fixed bg-white h-auto"
-              id="modal3"
-            >
+            <div class="modal-form rounded-3 border-1 position-fixed bg-white h-auto" id="modal3">
               <div class="modal-content">
-                <div
-                  class="_modal-header bg-whiteChalk-1 w-100 py-4 px-4 mb-3 bottom-1 d-flex justify-content-between align-items-center"
-                >
+                <div class="_modal-header bg-whiteChalk-1 w-100 py-4 px-4 mb-3 bottom-1 d-flex justify-content-between align-items-center">
                   <h3 class="darkGray fs-12 fw-5 text-uppercase mt-2">
                     Gerer Containeur
                   </h3>
@@ -524,12 +608,8 @@
                     <i class="bi bi-x darkGray fw-5"></i>
                   </div>
                 </div>
-                <div class="modal-body px-4">
-                  <form
-                    action=""
-                    method="post"
-                    class="px-3 py-3 mb-3 border-1 _form"
-                  >
+                <div class="modal-body px-4 ">
+                  <form action="" method="post" class="px-3 py-3 mb-3 border-1 _form">
                     <div class="row">
                       <div class="col-12">
                         <div class="mb-2 py-3 w-100">
@@ -539,7 +619,8 @@
                         </div>
                       </div>
                     </div>
-
+                    
+                    
                     <div class="d-flex justify-content-end gap-1">
                       <button class="btn btn-form px-4 py-1 fs-14">
                         Annuler
@@ -552,7 +633,8 @@
                 </div>
               </div>
             </div>
-          </div>
+            
+           </div>
           <div class="sidebar bg-white mt-1">
             <div class="title py-5 mb-3">
               <h2 class="fs-20 px-4 blue">
@@ -578,6 +660,11 @@
               <div class="line bg-silver mb-4"></div>
               <div class="searchByCritere d-flex flex-wrap">
                 <a
+                  href="listeBl.html"
+                  class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
+                  >Liste BL</a
+                >
+                <a
                   href="searchBL.html"
                   class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
                   >Numero BL</a
@@ -599,7 +686,7 @@
       </div>
     </section>
     <!--  -->
-    <script src="../JS/responsive.js"></script>
+    <script src="../JS/datepicker.js"></script>
     <script src="../JS/script.js"></script>
     <script src="../JS/accordion.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

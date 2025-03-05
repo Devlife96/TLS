@@ -26,8 +26,14 @@
 .bg-whiteChalk {
   background: #f6f4f1;
 }
+.bg-whiteChalk-1 {
+  background: #faf9f7;
+}
 .bg-white {
   background: #ffffff;
+}
+.bg-white-1{
+  background: #fdfdfd;
 }
 
 /* colors */

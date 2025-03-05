@@ -28,46 +28,51 @@
   </head>
   <body>
     <header class="fixed-top">
-      <nav class="main-menu w-100 bg-white h-auto bottom-1">
-        <div class="main-container-fluid mx-auto">
-          <div class="d-flex justify-content-between align-items-center">
-            <a class="logo">
-              <img
-                src="../IMG/logo/tls-logo.png"
-                alt=""
-                srcset=""
-                class="w-auto h-100 img-fluid"
-              />
-            </a>
-
-            <div class="d-flex justify-content-center align-items-center">
-              <ul class="navigation mt-3">
-                <li class="navigation-item">
-                  <a class="py-2" href="home.html">Accueil</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="py-2" href="listeAgence.html">Agences</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="py-2" href="livreur.html">Livreurs</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="py-2" href="listeClient.html">Clients</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="py-2" href="listeUtilisateur.html">Utilisateurs</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="py-2" href="listePort.html">Ports</a>
-                </li>
-              </ul>
-              <div class="divide bg-silver mx-3"></div>
-              <a
-                href="profile.html"
-                class="profile _w-30 _h-30 rounded-pill middle overflow-hidden"
-              >
-                <i class="bi bi-person-circle"></i>
+      <nav class="main-menu w-100 bg-white h-auto bottom-1 position-relative">
+        <div class="container-fluid">
+          <div class="main-container-fluid mx-auto">
+            <div class="d-flex justify-content-between align-items-center">
+              <a class="logo">
+                <img
+                  src="../IMG/logo/tls-logo.png"
+                  alt=""
+                  srcset=""
+                  class="w-auto h-100 img-fluid"
+                />
               </a>
+
+              <!-- Menu Toggle Button (Visible on Mobile) -->
+              <div class="menuToggle"><i class="bi bi-list darkGray"></i></div>
+  
+              <div class="container-navigation">
+                <ul class="navigation mt-3">
+                  <li class="navigation-item">
+                    <a class="py-2" href="home.html">Accueil</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="py-2" href="listeAgence.html">Agences</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="py-2" href="livreur.html">Livreurs</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="py-2" href="listeClient.html">Clients</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="py-2" href="listeUtilisateur.html">Utilisateurs</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="py-2" href="listePort.html">Ports</a>
+                  </li>
+                </ul>
+                <div class="divide bg-silver mx-3"></div>
+                <a
+                  href="profile.html"
+                  class="profile _w-30 _h-30 rounded-pill middle overflow-hidden"
+                >
+                  <i class="bi bi-person-circle"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -78,9 +83,14 @@
         <div class="d-flex justify-content-between">
           <div class="main-content h-auto">
             <div
-              class="d-flex justify-content-center align-items-center search-header mb-4 mt-1"
+              class="d-flex justify-content-center align-items-center search-header gap-2 mb-4 mt-1"
             >
-              <div class="">
+              <div
+                class="_h-40 _w-40 border-1 rounded-pill middle bg-white cursor  menu-toggle"
+              >
+                <i class="bi bi-chevron-left fw-5 darkGray"></i>
+              </div>
+              <div class="mx-1">
                 <form action="" class="search">
                   <input
                     type="text"
@@ -95,20 +105,24 @@
                 </form>
               </div>
 
-              <a href="addbl.html" class="_h-40 _w-40 middle bg-white mx-2"
-                ><i class="bi bi-plus-lg fw-6"></i
-              ></a>
-              <a href="addbl.html" class="_h-40 _w-40 middle bg-white"
+              <a
+                href="addbl.html"
+                class="_h-40 _w-40 middle bg-white  _btn reveal-data"
+              >
+                <i class="bi bi-plus-lg fw-6"></i>
+              </a>
+              <a href="statistics.html" class="_h-40 _w-40 middle bg-white"
                 ><i class="bi bi-graph-up"></i
               ></a>
             </div>
-            <div class="row px-4 mb-4">
+            <div class="row  mb-4">
+              <div class="container px-4">
               <div class="col-12">
                 <div class="accordion-content">
                   <div
                     class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
                   >
-                    <p class="darkGray mt-3">Reception</p>
+                    <p class="darkGray fs-14 mt-3">Reception</p>
                     <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
                   </div>
                   <div
@@ -170,13 +184,73 @@
                   <div
                     class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
                   >
-                    <p class="darkGray mt-3">Documents</p>
+                    <p class="darkGray fs-14 mt-3">Documents</p>
                     <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
                   </div>
                   <div
-                    class="accordion-item rounded-3 w-100 h-auto py-4 px-4 bg-white mb-2"
+                    class="accordion-item rounded-3 w-100 py-4 px-4 bg-white mb-2 scroll-data overflow-auto"
                   >
-                    <div class="border-1 rounded-2 py-4 px-2">
+                    <div class="border-1 rounded-2 py-4 px-2 mb-3">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="mb-1">
+                            <span class="px-3 fs-12 darkGray text-uppercase"
+                              >Date reception</span
+                            >
+                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                          </div>
+                          <div class="">
+                            <span class="px-3 fs-12 darkGray text-uppercase"
+                              >Date completee</span
+                            >
+                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                          </div>
+                          <div class="">
+                            <span class="px-3 fs-12 darkGray text-uppercase"
+                              >Note</span
+                            >
+                            <p class="px-3 fs-18"></p>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="mb-1">
+                            <span class="px-3 fs-12 darkGray text-uppercase"
+                              >Status</span
+                            >
+                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                          </div>
+                          <div class="mb-1">
+                            <span class="px-3 fs-12 darkGray text-uppercase"
+                              >nombre de jours</span
+                            >
+                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                          </div>
+                          <div class="">
+                            <span class="px-3 fs-12 darkGray text-uppercase"
+                              >enregistree par</span
+                            >
+                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div
+                            class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
+                          >
+                            <span class="darkGray fs-12 text-uppercase mb-2"
+                              >notes</span
+                            >
+                            <div class="line bg-silver w-100 mb-2"></div>
+                            <p class="px-1 fs-14 darkGray">
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Autem temporibus
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="border-1 rounded-2 py-4 px-2 mb-3">
                       <div class="row">
                         <div class="col-md-6">
                           <div class="mb-1">
@@ -244,7 +318,7 @@
                   <div
                     class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
                   >
-                    <p class="darkGray mt-3">Sydonia</p>
+                    <p class="darkGray fs-14 mt-3">Sydonia</p>
                     <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
                   </div>
                   <div
@@ -312,7 +386,7 @@
                   <div
                     class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
                   >
-                    <p class="darkGray mt-3">Deposition</p>
+                    <p class="darkGray fs-14 mt-3">Deposition</p>
                     <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
                   </div>
                   <div
@@ -374,12 +448,72 @@
                   <div
                     class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
                   >
-                    <p class="darkGray mt-3">Liquidation</p>
+                    <p class="darkGray fs-14 mt-3">Liquidation</p>
                     <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
                   </div>
                   <div
-                    class="accordion-item rounded-3 w-100 h-auto py-4 px-4 bg-white mb-2"
+                    class="accordion-item rounded-3 w-100 py-4 px-4 bg-white mb-2 scroll-data overflow-auto"
                   >
+                    <div class="border-1 rounded-2 py-4 px-2 mb-3">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="mb-1">
+                            <span class="px-3 fs-12 darkGray text-uppercase"
+                              >numero liquidation</span
+                            >
+                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                          </div>
+                          <div class="mb-1">
+                            <span class="px-3 fs-12 darkGray text-uppercase"
+                              >Date enregistree</span
+                            >
+                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                          </div>
+                          <div class="">
+                            <span class="px-3 fs-12 darkGray text-uppercase"
+                              >date liquidation</span
+                            >
+                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="mb-1">
+                            <span class="px-3 fs-12 darkGray text-uppercase"
+                              >montant</span
+                            >
+                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                          </div>
+                          <div class="">
+                            <span class="px-3 fs-12 darkGray text-uppercase"
+                              >status</span
+                            >
+                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                          </div>
+                          <div class="">
+                            <span class="px-3 fs-12 darkGray text-uppercase"
+                              >Enregistree par</span
+                            >
+                            <p class="px-3 fs-18">Sindy Bayonne</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div
+                            class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
+                          >
+                            <span class="darkGray fs-12 text-uppercase mb-2"
+                              >notes</span
+                            >
+                            <div class="line bg-silver w-100 mb-2"></div>
+                            <p class="px-1 fs-14 darkGray">
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Autem temporibus
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="border-1 rounded-2 py-4 px-2">
                       <div class="row">
                         <div class="col-md-6">
@@ -448,7 +582,7 @@
                   <div
                     class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
                   >
-                    <p class="darkGray mt-3">Cheque</p>
+                    <p class="darkGray fs-14 mt-3">Cheque</p>
                     <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
                   </div>
                   <div
@@ -510,7 +644,7 @@
                   <div
                     class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
                   >
-                    <p class="darkGray mt-3">Paiment</p>
+                    <p class="darkGray fs-14 mt-3">Paiment</p>
                     <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
                   </div>
                   <div
@@ -572,7 +706,7 @@
                   <div
                     class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
                   >
-                    <p class="darkGray mt-3">Details Containeurs</p>
+                    <p class="darkGray fs-14 mt-3">Details Containeurs</p>
                     <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
                   </div>
                   <div
@@ -621,6 +755,66 @@
                           </div>
                         </div>
                       </div>
+                      <div class="line bg-silver mb-3 mx-3"></div>
+                      <div class="hideContent">
+                        <div
+                          class="cursor mb-2 mx-3 py-0 hideInfo px-3 border-1 rounded-1 d-flex justify-content-between align-items-center"
+                        >
+                          <p class="darkGray mt-3">Information Suplementaire</p>
+                          <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
+                        </div>
+                        <div
+                          class="showInfo mx-3 mb-3 px-3 py-4 border-1 bg-whiteChalk-1 rounded-1"
+                        >
+                          <div class="row mb-2">
+                            <div class="col-md-6">
+                              <div class="mb-1">
+                                <span class="px-3 fs-12 darkGray text-uppercase"
+                                  >Date Remise</span
+                                >
+                                <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                              </div>
+                              <div class="mb-1">
+                                <span class="px-3 fs-12 darkGray text-uppercase"
+                                  >Date REtour</span
+                                >
+                                <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="mb-1">
+                                <span class="px-3 fs-12 darkGray text-uppercase"
+                                  >Date completee</span
+                                >
+                                <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                              </div>
+                              <div class="mb-1">
+                                <span class="px-3 fs-12 darkGray text-uppercase"
+                                  >Chauffeur</span
+                                >
+                                <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="line bg-silver mb-3 mx-3"></div>
+                          <div class="row">
+                            <div class="col">
+                              <div
+                                class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
+                              >
+                                <span class="darkGray fs-12 text-uppercase mb-2"
+                                  >notes</span
+                                >
+                                <div class="line bg-silver w-100 mb-2"></div>
+                                <p class="px-1 fs-14 darkGray">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Autem temporibus
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                       <div class="row">
                         <div class="col">
                           <div
@@ -646,7 +840,7 @@
                   <div
                     class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
                   >
-                    <p class="darkGray mt-3">Livraison</p>
+                    <p class="darkGray fs-14 mt-3">Livraison</p>
                     <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
                   </div>
                   <div
@@ -715,32 +909,34 @@
                   </div>
                 </div>
               </div>
+              </div>
             </div>
             <!-- footer -->
-            <footer class="py-4 bg-navy px-4">
-              <div class="row justify-content-center gx-2">
-                <div class="col-md-4">
-                  <ul class="footer-link">
-                    <li><a href="home" class="fs-14">Accueil</a></li>
-                    <li><a href="agences.html" class="fs-14">Agences</a></li>
-                  </ul>
-                </div>
-                <div class="col-md-4">
-                  <ul class="footer-link">
-                    <li><a href="livreur.html" class="fs-14">Livreurs</a></li>
-                    <li>
-                      <a href="fournisseurs.html" class="fs-14">Fournisseurs</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-4">
-                  <ul class="footer-link">
-                    <li><a href="client.html" class="fs-14">Clients</a></li>
-                    <li><a href="port.html" class="fs-14">Ports</a></li>
-                  </ul>
+            <footer class="py-4 bg-navy">
+              <div class="container px-4">
+                <div class="row justify-content-center">
+                  <div class="col-4 py-2">
+                    <ul class="footer-link">
+                      <li><a href="home" class="fs-14">Accueil</a></li>
+                      <li><a href="agences.html" class="fs-14">Agences</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-4 py-2">
+                    <ul class="footer-link">
+                      <li><a href="livreur.html" class="fs-14">Livreurs</a></li>
+                      <li>
+                        <a href="fournisseurs.html" class="fs-14">Fournisseurs</a>
+                      </li>
+                  </div>
+                  <div class="col-4 py-2">
+                    <ul class="footer-link">
+                      <li><a href="client.html" class="fs-14">Clients</a></li>
+                      <li><a href="port.html" class="fs-14">Ports</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </footer>
+          </footer>
           </div>
           <div class="sidebar bg-white mt-1">
             <div class="title py-5 mb-3">
@@ -767,6 +963,11 @@
               <div class="line bg-silver mb-4"></div>
               <div class="searchByCritere d-flex flex-wrap">
                 <a
+                  href="listeBl.html"
+                  class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
+                  >Liste BL</a
+                >
+                <a
                   href="searchBL.html"
                   class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
                   >Numero BL</a
@@ -788,6 +989,8 @@
       </div>
     </section>
     <!--  -->
+    <script src="../JS/responsive.js"></script>
+    <script src="../JS/script.js"></script>
     <script src="../JS/accordion.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

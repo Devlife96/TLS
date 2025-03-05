@@ -16,11 +16,20 @@
 .border-1 {
   border: 1px solid #e2e4e7;
 }
+.border-l-1 {
+  border-left: 1px solid #e2e4e7;
+}
+.border-2 {
+  border: 2px solid #e2e4e7;
+}
 .line {
   height: 0.5px;
 }
 .bottom-1 {
   border-bottom: 1px solid #e2e4e7;
+}
+.top-1 {
+  border-top: 1px solid #e2e4e7;
 }
 
 /* animation */

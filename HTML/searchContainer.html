@@ -28,9 +28,9 @@
   </head>
   <body>
     <header class="fixed-top">
-      <nav class="main-menu w-100 bg-white h-auto bottom-1 position-relative">
+      <nav class="main-menu w-100 bg-white h-auto bottom-1">
         <div class="container-fluid">
-          <div class="main-container-fluid mx-auto">
+          <div class="main-container-fluid mx-auto position-relative">
             <div class="d-flex justify-content-between align-items-center">
               <a class="logo">
                 <img
@@ -43,7 +43,7 @@
 
               <!-- Menu Toggle Button (Visible on Mobile) -->
               <div class="menuToggle"><i class="bi bi-list darkGray"></i></div>
-  
+
               <div class="container-navigation">
                 <ul class="navigation mt-3">
                   <li class="navigation-item">
@@ -59,19 +59,45 @@
                     <a class="py-2" href="listeClient.html">Clients</a>
                   </li>
                   <li class="navigation-item">
-                    <a class="py-2" href="listeUtilisateur.html">Utilisateurs</a>
+                    <a class="py-2" href="listeUtilisateur.html"
+                      >Utilisateurs</a
+                    >
                   </li>
                   <li class="navigation-item">
                     <a class="py-2" href="listePort.html">Ports</a>
                   </li>
                 </ul>
                 <div class="divide bg-silver mx-3"></div>
+                <!-- Profile Icon -->
                 <a
                   href="profile.html"
-                  class="profile _w-30 _h-30 rounded-pill middle overflow-hidden"
+                  class="profile rounded-pill middle overflow-hidden border-1"
                 >
                   <i class="bi bi-person-circle"></i>
                 </a>
+                <div class="sub-profile border-1 bg-white rounded-2">
+                  <ul class="px-4 py-3">
+                    <li class="fs-14 mb-2">
+                      <a
+                        class="darkGray d-flex align-items-center gap-1"
+                        href=""
+                      >
+                        <i class="bi bi-person"></i>
+                        <span>Profile</span>
+                      </a>
+                    </li>
+                    <div class="line bg-silver w-100 mb-2"></div>
+                    <li class="fs-14">
+                      <a
+                        class="darkGray d-flex align-items-center gap-1"
+                        href=""
+                      >
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Deconnexion</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -86,7 +112,7 @@
               class="d-flex justify-content-center align-items-center search-header gap-2 mb-4 mt-1"
             >
               <div
-                class="_h-40 _w-40 border-1 rounded-pill middle bg-white cursor  menu-toggle"
+                class="_h-40 _w-40 border-1 rounded-pill middle bg-white cursor menu-toggle"
               >
                 <i class="bi bi-chevron-left fw-5 darkGray"></i>
               </div>
@@ -107,7 +133,7 @@
 
               <a
                 href="addbl.html"
-                class="_h-40 _w-40 middle bg-white  _btn reveal-data"
+                class="_h-40 _w-40 middle bg-white _btn reveal-data"
               >
                 <i class="bi bi-plus-lg fw-6"></i>
               </a>
@@ -115,828 +141,811 @@
                 ><i class="bi bi-graph-up"></i
               ></a>
             </div>
-            <div class="row  mb-4">
+            <div class="row mb-4">
               <div class="container px-4">
-              <div class="col-12">
-                <div class="accordion-content">
-                  <div
-                    class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
-                  >
-                    <p class="darkGray fs-14 mt-3">Reception</p>
-                    <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
-                  </div>
-                  <div
-                    class="accordion-item rounded-3 w-100 h-auto py-4 px-4 bg-white mb-2"
-                  >
-                    <div class="border-1 rounded-2 py-4 px-2">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Date Arrivee</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Date enregistree</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Date reception</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Enregistree par</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <div
-                            class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
-                          >
-                            <span class="darkGray fs-12 text-uppercase mb-2"
-                              >notes</span
-                            >
-                            <div class="line bg-silver w-100 mb-2"></div>
-                            <p class="px-1 fs-14 darkGray">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Autem temporibus
-                            </p>
-                          </div>
-                        </div>
-                      </div>
+                <div class="col-12">
+                  <div class="accordion-content">
+                    <div
+                      class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
+                    >
+                      <p class="darkGray fs-14 mt-3">Reception</p>
+                      <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="accordion-content">
-                  <div
-                    class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
-                  >
-                    <p class="darkGray fs-14 mt-3">Documents</p>
-                    <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
-                  </div>
-                  <div
-                    class="accordion-item rounded-3 w-100 py-4 px-4 bg-white mb-2 scroll-data overflow-auto"
-                  >
-                    <div class="border-1 rounded-2 py-4 px-2 mb-3">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Date reception</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Date completee</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Note</span
-                            >
-                            <p class="px-3 fs-18"></p>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Status</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >nombre de jours</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >enregistree par</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <div
-                            class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
-                          >
-                            <span class="darkGray fs-12 text-uppercase mb-2"
-                              >notes</span
-                            >
-                            <div class="line bg-silver w-100 mb-2"></div>
-                            <p class="px-1 fs-14 darkGray">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Autem temporibus
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="border-1 rounded-2 py-4 px-2 mb-3">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Date reception</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Date completee</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Note</span
-                            >
-                            <p class="px-3 fs-18"></p>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Status</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >nombre de jours</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >enregistree par</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <div
-                            class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
-                          >
-                            <span class="darkGray fs-12 text-uppercase mb-2"
-                              >notes</span
-                            >
-                            <div class="line bg-silver w-100 mb-2"></div>
-                            <p class="px-1 fs-14 darkGray">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Autem temporibus
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="accordion-content">
-                  <div
-                    class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
-                  >
-                    <p class="darkGray fs-14 mt-3">Sydonia</p>
-                    <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
-                  </div>
-                  <div
-                    class="accordion-item rounded-3 w-100 h-auto py-4 px-4 bg-white mb-2"
-                  >
-                    <div class="border-1 rounded-2 py-4 px-2">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >numero du dossier</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Date enregistree</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >enregistree par</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Nombre de jours</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >status</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <div
-                            class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
-                          >
-                            <span class="darkGray fs-12 text-uppercase mb-2"
-                              >notes</span
-                            >
-                            <div class="line bg-silver w-100 mb-2"></div>
-                            <p class="px-1 fs-14 darkGray">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Autem temporibus
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="accordion-content">
-                  <div
-                    class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
-                  >
-                    <p class="darkGray fs-14 mt-3">Deposition</p>
-                    <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
-                  </div>
-                  <div
-                    class="accordion-item rounded-3 w-100 h-auto py-4 px-4 bg-white mb-2"
-                  >
-                    <div class="border-1 rounded-2 py-4 px-2">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Date enregistree</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >date depot</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >status</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >enregistree par</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <div
-                            class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
-                          >
-                            <span class="darkGray fs-12 text-uppercase mb-2"
-                              >notes</span
-                            >
-                            <div class="line bg-silver w-100 mb-2"></div>
-                            <p class="px-1 fs-14 darkGray">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Autem temporibus
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="accordion-content">
-                  <div
-                    class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
-                  >
-                    <p class="darkGray fs-14 mt-3">Liquidation</p>
-                    <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
-                  </div>
-                  <div
-                    class="accordion-item rounded-3 w-100 py-4 px-4 bg-white mb-2 scroll-data overflow-auto"
-                  >
-                    <div class="border-1 rounded-2 py-4 px-2 mb-3">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >numero liquidation</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Date enregistree</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >date liquidation</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >montant</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >status</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Enregistree par</span
-                            >
-                            <p class="px-3 fs-18">Sindy Bayonne</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <div
-                            class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
-                          >
-                            <span class="darkGray fs-12 text-uppercase mb-2"
-                              >notes</span
-                            >
-                            <div class="line bg-silver w-100 mb-2"></div>
-                            <p class="px-1 fs-14 darkGray">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Autem temporibus
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="border-1 rounded-2 py-4 px-2">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >numero liquidation</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Date enregistree</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >date liquidation</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >montant</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >status</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Enregistree par</span
-                            >
-                            <p class="px-3 fs-18">Sindy Bayonne</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <div
-                            class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
-                          >
-                            <span class="darkGray fs-12 text-uppercase mb-2"
-                              >notes</span
-                            >
-                            <div class="line bg-silver w-100 mb-2"></div>
-                            <p class="px-1 fs-14 darkGray">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Autem temporibus
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="accordion-content">
-                  <div
-                    class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
-                  >
-                    <p class="darkGray fs-14 mt-3">Cheque</p>
-                    <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
-                  </div>
-                  <div
-                    class="accordion-item rounded-3 w-100 h-auto py-4 px-4 bg-white mb-2"
-                  >
-                    <div class="border-1 rounded-2 py-4 px-2">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Date enregistrement</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Date paiement</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >status</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Enregistree par</span
-                            >
-                            <p class="px-3 fs-18">Sindy Bayonne</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <div
-                            class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
-                          >
-                            <span class="darkGray fs-12 text-uppercase mb-2"
-                              >notes</span
-                            >
-                            <div class="line bg-silver w-100 mb-2"></div>
-                            <p class="px-1 fs-14 darkGray">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Autem temporibus
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="accordion-content">
-                  <div
-                    class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
-                  >
-                    <p class="darkGray fs-14 mt-3">Paiment</p>
-                    <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
-                  </div>
-                  <div
-                    class="accordion-item rounded-3 w-100 h-auto py-4 px-4 bg-white mb-2"
-                  >
-                    <div class="border-1 rounded-2 py-4 px-2">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Date enregistrement</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Date paiement</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >status</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Enregistree par</span
-                            >
-                            <p class="px-3 fs-18">Sindy Bayonne</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <div
-                            class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
-                          >
-                            <span class="darkGray fs-12 text-uppercase mb-2"
-                              >notes</span
-                            >
-                            <div class="line bg-silver w-100 mb-2"></div>
-                            <p class="px-1 fs-14 darkGray">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Autem temporibus
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="accordion-content">
-                  <div
-                    class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
-                  >
-                    <p class="darkGray fs-14 mt-3">Details Containeurs</p>
-                    <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
-                  </div>
-                  <div
-                    class="accordion-item rounded-3 w-100 h-auto py-4 px-4 bg-white mb-2"
-                  >
-                    <div class="border-1 rounded-2 py-4 px-2">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >Numero containeur</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >poids</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >seal</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >status</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="mb-1">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >date livraison</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >livre par</span
-                            >
-                            <p class="px-3 fs-18">Sindy Bayonne</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="line bg-silver mb-3 mx-3"></div>
-                      <div class="hideContent">
-                        <div
-                          class="cursor mb-2 mx-3 py-0 hideInfo px-3 border-1 rounded-1 d-flex justify-content-between align-items-center"
-                        >
-                          <p class="darkGray mt-3">Information Suplementaire</p>
-                          <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
-                        </div>
-                        <div
-                          class="showInfo mx-3 mb-3 px-3 py-4 border-1 bg-whiteChalk-1 rounded-1"
-                        >
-                          <div class="row mb-2">
-                            <div class="col-md-6">
-                              <div class="mb-1">
-                                <span class="px-3 fs-12 darkGray text-uppercase"
-                                  >Date Remise</span
-                                >
-                                <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                              </div>
-                              <div class="mb-1">
-                                <span class="px-3 fs-12 darkGray text-uppercase"
-                                  >Date REtour</span
-                                >
-                                <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="mb-1">
-                                <span class="px-3 fs-12 darkGray text-uppercase"
-                                  >Date completee</span
-                                >
-                                <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                              </div>
-                              <div class="mb-1">
-                                <span class="px-3 fs-12 darkGray text-uppercase"
-                                  >Chauffeur</span
-                                >
-                                <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="line bg-silver mb-3 mx-3"></div>
-                          <div class="row">
-                            <div class="col">
-                              <div
-                                class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
+                    <div
+                      class="accordion-item rounded-3 w-100 h-auto py-4 px-4 bg-white mb-2"
+                    >
+                      <div class="border-1 rounded-2 py-4 px-2">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Date Arrivee</span
                               >
-                                <span class="darkGray fs-12 text-uppercase mb-2"
-                                  >notes</span
-                                >
-                                <div class="line bg-silver w-100 mb-2"></div>
-                                <p class="px-1 fs-14 darkGray">
-                                  Lorem ipsum dolor sit amet, consectetur
-                                  adipisicing elit. Autem temporibus
-                                </p>
-                              </div>
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Date enregistree</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Date reception</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Enregistree par</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div
+                              class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
+                            >
+                              <span class="darkGray fs-12 text-uppercase mb-2"
+                                >notes</span
+                              >
+                              <div class="line bg-silver w-100 mb-2"></div>
+                              <p class="px-1 fs-14 darkGray">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Autem temporibus
+                              </p>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col">
-                          <div
-                            class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
-                          >
-                            <span class="darkGray fs-12 text-uppercase mb-2"
-                              >notes</span
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="accordion-content">
+                    <div
+                      class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
+                    >
+                      <p class="darkGray fs-14 mt-3">Documents</p>
+                      <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
+                    </div>
+                    <div
+                      class="accordion-item rounded-3 w-100 py-4 px-4 bg-white mb-2 scroll-data overflow-auto"
+                    >
+                      <div class="border-1 rounded-2 py-4 px-2 mb-3">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Date reception</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Date completee</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Note</span
+                              >
+                              <p class="px-3 fs-18"></p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Status</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >nombre de jours</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >enregistree par</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div
+                              class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
                             >
-                            <div class="line bg-silver w-100 mb-2"></div>
-                            <p class="px-1 fs-14 darkGray">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Autem temporibus
-                            </p>
+                              <span class="darkGray fs-12 text-uppercase mb-2"
+                                >notes</span
+                              >
+                              <div class="line bg-silver w-100 mb-2"></div>
+                              <p class="px-1 fs-14 darkGray">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Autem temporibus
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="border-1 rounded-2 py-4 px-2 mb-3">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Date reception</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Date completee</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Note</span
+                              >
+                              <p class="px-3 fs-18"></p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Status</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >nombre de jours</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >enregistree par</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div
+                              class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
+                            >
+                              <span class="darkGray fs-12 text-uppercase mb-2"
+                                >notes</span
+                              >
+                              <div class="line bg-silver w-100 mb-2"></div>
+                              <p class="px-1 fs-14 darkGray">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Autem temporibus
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-12">
-                <div class="accordion-content">
-                  <div
-                    class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
-                  >
-                    <p class="darkGray fs-14 mt-3">Livraison</p>
-                    <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
-                  </div>
-                  <div
-                    class="accordion-item rounded-3 w-100 h-auto py-4 px-4 bg-white mb-2"
-                  >
-                    <div class="border-1 rounded-2 py-4 px-2">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >NUMERO BL</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                <div class="col-12">
+                  <div class="accordion-content">
+                    <div
+                      class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
+                    >
+                      <p class="darkGray fs-14 mt-3">Sydonia</p>
+                      <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
+                    </div>
+                    <div
+                      class="accordion-item rounded-3 w-100 h-auto py-4 px-4 bg-white mb-2"
+                    >
+                      <div class="border-1 rounded-2 py-4 px-2">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >numero du dossier</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Date enregistree</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >enregistree par</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
                           </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >NOM DU CLIENT</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >NOM DE L'AGENCE</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >NUMERO DU DOSIER</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >NOMBRE DE CONTAINEUR</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
-                          </div>
-                          <div class="">
-                            <span class="px-3 fs-12 darkGray text-uppercase"
-                              >NOM DU PORT</span
-                            >
-                            <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                          <div class="col-md-6">
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Nombre de jours</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >status</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <div
-                            class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
-                          >
-                            <span class="darkGray fs-12 text-uppercase mb-2"
-                              >notes</span
+                        <div class="row">
+                          <div class="col">
+                            <div
+                              class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
                             >
-                            <div class="line bg-silver w-100 mb-2"></div>
-                            <p class="px-1 fs-14 darkGray">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Autem temporibus
-                            </p>
+                              <span class="darkGray fs-12 text-uppercase mb-2"
+                                >notes</span
+                              >
+                              <div class="line bg-silver w-100 mb-2"></div>
+                              <p class="px-1 fs-14 darkGray">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Autem temporibus
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+                <div class="col-12">
+                  <div class="accordion-content">
+                    <div
+                      class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
+                    >
+                      <p class="darkGray fs-14 mt-3">Deposition</p>
+                      <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
+                    </div>
+                    <div
+                      class="accordion-item rounded-3 w-100 h-auto py-4 px-4 bg-white mb-2"
+                    >
+                      <div class="border-1 rounded-2 py-4 px-2">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Date enregistree</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >date depot</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >status</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >enregistree par</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div
+                              class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
+                            >
+                              <span class="darkGray fs-12 text-uppercase mb-2"
+                                >notes</span
+                              >
+                              <div class="line bg-silver w-100 mb-2"></div>
+                              <p class="px-1 fs-14 darkGray">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Autem temporibus
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="accordion-content">
+                    <div
+                      class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
+                    >
+                      <p class="darkGray fs-14 mt-3">Liquidation</p>
+                      <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
+                    </div>
+                    <div
+                      class="accordion-item rounded-3 w-100 py-4 px-4 bg-white mb-2 scroll-data overflow-auto"
+                    >
+                      <div class="border-1 rounded-2 py-4 px-2 mb-3">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >numero liquidation</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Date enregistree</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >date liquidation</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >montant</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >status</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Enregistree par</span
+                              >
+                              <p class="px-3 fs-18">Sindy Bayonne</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div
+                              class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
+                            >
+                              <span class="darkGray fs-12 text-uppercase mb-2"
+                                >notes</span
+                              >
+                              <div class="line bg-silver w-100 mb-2"></div>
+                              <p class="px-1 fs-14 darkGray">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Autem temporibus
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="border-1 rounded-2 py-4 px-2">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >numero liquidation</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Date enregistree</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >date liquidation</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >montant</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >status</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Enregistree par</span
+                              >
+                              <p class="px-3 fs-18">Sindy Bayonne</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div
+                              class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
+                            >
+                              <span class="darkGray fs-12 text-uppercase mb-2"
+                                >notes</span
+                              >
+                              <div class="line bg-silver w-100 mb-2"></div>
+                              <p class="px-1 fs-14 darkGray">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Autem temporibus
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="accordion-content">
+                    <div
+                      class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
+                    >
+                      <p class="darkGray fs-14 mt-3">Cheque</p>
+                      <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
+                    </div>
+                    <div
+                      class="accordion-item rounded-3 w-100 h-auto py-4 px-4 bg-white mb-2"
+                    >
+                      <div class="border-1 rounded-2 py-4 px-2">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Date enregistrement</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Date paiement</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >status</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Enregistree par</span
+                              >
+                              <p class="px-3 fs-18">Sindy Bayonne</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div
+                              class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
+                            >
+                              <span class="darkGray fs-12 text-uppercase mb-2"
+                                >notes</span
+                              >
+                              <div class="line bg-silver w-100 mb-2"></div>
+                              <p class="px-1 fs-14 darkGray">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Autem temporibus
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="accordion-content">
+                    <div
+                      class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
+                    >
+                      <p class="darkGray fs-14 mt-3">Paiment</p>
+                      <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
+                    </div>
+                    <div
+                      class="accordion-item rounded-3 w-100 h-auto py-4 px-4 bg-white mb-2"
+                    >
+                      <div class="border-1 rounded-2 py-4 px-2">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Date enregistrement</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Date paiement</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >status</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Enregistree par</span
+                              >
+                              <p class="px-3 fs-18">Sindy Bayonne</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div
+                              class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
+                            >
+                              <span class="darkGray fs-12 text-uppercase mb-2"
+                                >notes</span
+                              >
+                              <div class="line bg-silver w-100 mb-2"></div>
+                              <p class="px-1 fs-14 darkGray">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Autem temporibus
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="accordion-content">
+                    <div
+                      class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
+                    >
+                      <p class="darkGray fs-14 mt-3">Details Containeurs</p>
+                      <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
+                    </div>
+                    <div
+                      class="accordion-item rounded-3 w-100 h-auto py-4 px-4 bg-white mb-2"
+                    >
+                      <div class="border-1 rounded-2 py-4 px-2">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >Numero containeur</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >poids</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >seal</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >status</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="mb-1">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >date livraison</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >livre par</span
+                              >
+                              <p class="px-3 fs-18">Sindy Bayonne</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="line bg-silver mb-3 mx-3"></div>
+                        <div class="hideContent">
+                          <div
+                            class="cursor mb-2 mx-3 py-0 hideInfo px-3 border-1 rounded-1 d-flex justify-content-between align-items-center"
+                          >
+                            <p class="darkGray mt-3">
+                              Information Suplementaire
+                            </p>
+                            <i
+                              class="bi bi-chevron-down darkGray mt-2 arrow"
+                            ></i>
+                          </div>
+                          <div
+                            class="showInfo mx-3 mb-3 px-3 py-4 border-1 bg-whiteChalk-1 rounded-1"
+                          >
+                            <div class="row mb-2">
+                              <div class="col-md-6">
+                                <div class="mb-1">
+                                  <span
+                                    class="px-3 fs-12 darkGray text-uppercase"
+                                    >Date Remise</span
+                                  >
+                                  <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                                </div>
+                                <div class="mb-1">
+                                  <span
+                                    class="px-3 fs-12 darkGray text-uppercase"
+                                    >Date REtour</span
+                                  >
+                                  <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="mb-1">
+                                  <span
+                                    class="px-3 fs-12 darkGray text-uppercase"
+                                    >Date completee</span
+                                  >
+                                  <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                                </div>
+                                <div class="mb-1">
+                                  <span
+                                    class="px-3 fs-12 darkGray text-uppercase"
+                                    >Chauffeur</span
+                                  >
+                                  <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="line bg-silver mb-3 mx-3"></div>
+                            <div class="row">
+                              <div class="col">
+                                <div
+                                  class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
+                                >
+                                  <span
+                                    class="darkGray fs-12 text-uppercase mb-2"
+                                    >notes</span
+                                  >
+                                  <div class="line bg-silver w-100 mb-2"></div>
+                                  <p class="px-1 fs-14 darkGray">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Autem temporibus
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div
+                              class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
+                            >
+                              <span class="darkGray fs-12 text-uppercase mb-2"
+                                >notes</span
+                              >
+                              <div class="line bg-silver w-100 mb-2"></div>
+                              <p class="px-1 fs-14 darkGray">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Autem temporibus
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="accordion-content">
+                    <div
+                      class="accordion mb-2 bg-white px-4 rounded-3 d-flex justify-content-between align-items-center cursor"
+                    >
+                      <p class="darkGray fs-14 mt-3">Livraison</p>
+                      <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
+                    </div>
+                    <div
+                      class="accordion-item rounded-3 w-100 h-auto py-4 px-4 bg-white mb-2"
+                    >
+                      <div class="border-1 rounded-2 py-4 px-2">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >NUMERO BL</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >NOM DU CLIENT</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >NOM DE L'AGENCE</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >NUMERO DU DOSIER</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >NOMBRE DE CONTAINEUR</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                            <div class="">
+                              <span class="px-3 fs-12 darkGray text-uppercase"
+                                >NOM DU PORT</span
+                              >
+                              <p class="px-3 fs-18">BL-OOO-2025-0001</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div
+                              class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
+                            >
+                              <span class="darkGray fs-12 text-uppercase mb-2"
+                                >notes</span
+                              >
+                              <div class="line bg-silver w-100 mb-2"></div>
+                              <p class="px-1 fs-14 darkGray">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Autem temporibus
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- footer -->
-            <footer class="py-4 bg-navy">
-              <div class="container px-4">
-                <div class="row justify-content-center">
-                  <div class="col-4 py-2">
-                    <ul class="footer-link">
-                      <li><a href="home" class="fs-14">Accueil</a></li>
-                      <li><a href="agences.html" class="fs-14">Agences</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-4 py-2">
-                    <ul class="footer-link">
-                      <li><a href="livreur.html" class="fs-14">Livreurs</a></li>
-                      <li>
-                        <a href="fournisseurs.html" class="fs-14">Fournisseurs</a>
-                      </li>
-                  </div>
-                  <div class="col-4 py-2">
-                    <ul class="footer-link">
-                      <li><a href="client.html" class="fs-14">Clients</a></li>
-                      <li><a href="port.html" class="fs-14">Ports</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-          </footer>
           </div>
           <div class="sidebar bg-white mt-1">
             <div class="title py-5 mb-3">
@@ -950,12 +959,18 @@
                   >Recherche par liste</span
                 >
                 <div class="line bg-silver mb-4"></div>
-                <li class="px-2 py-2"><a href="client.html">Clients</a></li>
-                <li class="px-2 py-2">
-                  <a href="fournisseurs.html">Fournisseurs</a>
-                </li>
-                <li class="px-2 py-2"><a href="port.html">Port</a></li>
-                <li class="px-2 py-2"><a href="agences.html">Agences</a></li>
+                <a href="client.html">
+                  <li class="px-2 py-2">Client</li>
+                </a>
+                <a href="fournisseurs.html">
+                  <li class="px-2 py-2">Fournisseurs</li>
+                </a>
+                <a href="agences.html">
+                  <li class="px-2 py-2">Agences</li>
+                </a>
+                <a href="port.html">
+                  <li class="px-2 py-2">Port</li>
+                </a>
               </ul>
               <span class="light-blue fs-13 mb-2 d-block fw-5"
                 >Recherche par critere</span
@@ -978,8 +993,8 @@
                   >Dossiers</a
                 >
                 <a
-                  href="#"
-                  class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1 active"
+                  href="searchContainer.html"
+                  class="active tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
                   >Containeur</a
                 >
               </div>

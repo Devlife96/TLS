@@ -28,9 +28,9 @@
   </head>
   <body>
     <header class="fixed-top">
-      <nav class="main-menu w-100 bg-white h-auto bottom-1 position-relative">
+      <nav class="main-menu w-100 bg-white h-auto bottom-1">
         <div class="container-fluid">
-          <div class="main-container-fluid mx-auto">
+          <div class="main-container-fluid mx-auto position-relative">
             <div class="d-flex justify-content-between align-items-center">
               <a class="logo">
                 <img
@@ -68,12 +68,36 @@
                   </li>
                 </ul>
                 <div class="divide bg-silver mx-3"></div>
+                <!-- Profile Icon -->
                 <a
                   href="profile.html"
-                  class="profile _w-30 _h-30 rounded-pill middle overflow-hidden"
+                  class="profile rounded-pill middle overflow-hidden border-1"
                 >
                   <i class="bi bi-person-circle"></i>
                 </a>
+                <div class="sub-profile border-1 bg-white rounded-2">
+                  <ul class="px-4 py-3">
+                    <li class="fs-14 mb-2">
+                      <a
+                        class="darkGray d-flex align-items-center gap-1"
+                        href=""
+                      >
+                        <i class="bi bi-person"></i>
+                        <span>Profile</span>
+                      </a>
+                    </li>
+                    <div class="line bg-silver w-100 mb-2"></div>
+                    <li class="fs-14">
+                      <a
+                        class="darkGray d-flex align-items-center gap-1"
+                        href=""
+                      >
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Deconnexion</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -88,7 +112,7 @@
               class="d-flex justify-content-center align-items-center search-header gap-2 mt-1 mb-4"
             >
               <div
-                class="_h-40 _w-40 border-1 rounded-pill middle bg-white cursor  menu-toggle"
+                class="_h-40 _w-40 border-1 rounded-pill middle bg-white cursor menu-toggle"
               >
                 <i class="bi bi-chevron-left fw-5 darkGray"></i>
               </div>
@@ -121,7 +145,9 @@
             <div class="row gx-3 gy-3 mb-4">
               <div class="container px-4">
                 <div class="col-md-12 mb-3">
-                  <div class="rounded-3 w-100 h-auto py-4 px-3 bg-white border-1">
+                  <div
+                    class="rounded-3 w-100 h-auto py-4 px-3 bg-white border-1"
+                  >
                     <div class="row mb-2">
                       <div class="col-md-6">
                         <div class="">
@@ -173,7 +199,9 @@
                   </div>
                 </div>
                 <div class="col-md-12 mb-3">
-                  <div class="rounded-3 w-100 h-auto py-4 px-3 bg-white border-1">
+                  <div
+                    class="rounded-3 w-100 h-auto py-4 px-3 bg-white border-1"
+                  >
                     <div class="row mb-2">
                       <div class="col-md-6">
                         <div class="">
@@ -225,7 +253,9 @@
                   </div>
                 </div>
                 <div class="col-md-12 mb-3">
-                  <div class="rounded-3 w-100 h-auto py-4 px-3 bg-white border-1">
+                  <div
+                    class="rounded-3 w-100 h-auto py-4 px-3 bg-white border-1"
+                  >
                     <div class="row mb-2">
                       <div class="col-md-6">
                         <div class="">
@@ -278,33 +308,6 @@
                 </div>
               </div>
             </div>
-            <div class="container"></div>
-           <!-- footer -->
-           <footer class="py-4 bg-navy">
-            <div class="container px-4">
-              <div class="row justify-content-center">
-                <div class="col-4 py-2">
-                  <ul class="footer-link">
-                    <li><a href="home" class="fs-14">Accueil</a></li>
-                    <li><a href="agences.html" class="fs-14">Agences</a></li>
-                  </ul>
-                </div>
-                <div class="col-4 py-2">
-                  <ul class="footer-link">
-                    <li><a href="livreur.html" class="fs-14">Livreurs</a></li>
-                    <li>
-                      <a href="fournisseurs.html" class="fs-14">Fournisseurs</a>
-                    </li>
-                </div>
-                <div class="col-4 py-2">
-                  <ul class="footer-link">
-                    <li><a href="client.html" class="fs-14">Clients</a></li>
-                    <li><a href="port.html" class="fs-14">Ports</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-        </footer>
             <div
               class="modal-form rounded-3 border-1 position-fixed bg-white h-auto"
             >
@@ -379,14 +382,18 @@
                   >Recherche par liste</span
                 >
                 <div class="line bg-silver mb-4"></div>
-                <li class="px-2 py-2"><a href="client.html">Clients</a></li>
-                <li class="px-2 py-2">
-                  <a href="fournisseurs.html">Fournisseurs</a>
-                </li>
-                <li class="px-2 py-2"><a href="port.html">Port</a></li>
-                <li class="px-2 py-2 active">
-                  <a href="agences.html">Agences</a>
-                </li>
+                <a href="client.html">
+                  <li class="px-2 py-2">Client</li>
+                </a>
+                <a href="fournisseurs.html">
+                  <li class="px-2 py-2">Fournisseurs</li>
+                </a>
+                <a href="agences.html">
+                  <li class="active px-2 py-2">Agences</li>
+                </a>
+                <a href="port.html">
+                  <li class="px-2 py-2">Port</li>
+                </a>
               </ul>
               <span class="light-blue fs-13 mb-2 d-block fw-5"
                 >Recherche par critere</span

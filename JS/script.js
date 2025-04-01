@@ -37,6 +37,34 @@ window.onclick = function (event) {
   }
 };
 
+// profile toggle
+const profile = document.querySelectorAll(".profile");
+const subProfile = document.querySelectorAll(".sub-profile");
+
+profile.forEach((el) => {
+  hideProfile();
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    showProfile();
+  });
+});
+
+function hideProfile() {
+  subProfile.forEach((i) => {
+    i.classList.add("hide");
+  });
+}
+
+function showProfile() {
+  subProfile.forEach((i) => {
+    if (i.classList.contains("hide")) {
+      i.classList.remove("hide");
+    } else {
+      i.classList.add("hide");
+    }
+  });
+}
+
 // // Menu toggle
 // const sidebar = document.querySelectorAll(".sidebar");
 // const toggle = document.querySelectorAll(".menu-toggle");

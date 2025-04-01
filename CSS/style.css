@@ -118,6 +118,19 @@ header + .section {
   background-clip: initial;
   object-fit: cover;
 }
+
+.sub-profile {
+  position: absolute;
+  top: 80%;
+  right: 0;
+  width: 150px;
+}
+.sub-profile ul li a:hover {
+  transition: color 0.2s ease-in-out;
+}
+.sub-profile ul li a:hover {
+  color: #ff7124;
+}
 .btn-form {
   background: #faf9f7 !important;
   font-size: 14px !important;
@@ -352,19 +365,19 @@ textarea {
   transition: border 0.2s ease-in-out;
 }
 
-.box-link .box-list li a {
+.box-link .box-list a li {
   font-size: 14px;
   color: #787a7b;
-  transition: color 0.2s ease-in-out;
+  transition: color, border 0.2s ease-in-out;
 }
 .box-link .box-list li:hover {
   border: 1px solid #ff7124;
-}
-.box-link .box-list a:hover {
   color: #ff7124;
 }
+
 .box-link li.active {
   border: 1px solid #ff7124;
+  color: #ff7124 !important;
 }
 .box-link li.active a {
   color: #ff7124;
@@ -445,7 +458,7 @@ table tbody tr td {
 .modal-form-role {
   width: auto;
   z-index: 1;
-  top: 15%;
+  top: 45%;
   right: 18%;
   display: none;
 }

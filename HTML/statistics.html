@@ -28,8 +28,9 @@
   </head>
   <body>
     <header class="fixed-top">
-      <nav class="main-menu w-100 bg-white h-auto bottom-1">
-        <div class="main-container-fluid mx-auto">
+      <nav class="main-menu w-100 bg-white h-auto bottom-1 ">
+       <div class="container-fluid">
+        <div class="main-container-fluid mx-auto position-relative">
           <div class="d-flex justify-content-between align-items-center">
             <a class="logo">
               <img
@@ -40,7 +41,10 @@
               />
             </a>
 
-            <div class="d-flex justify-content-center align-items-center">
+             <!-- Menu Toggle Button (Visible on Mobile) -->
+             <div class="menuToggle"><i class="bi bi-list darkGray"></i></div>
+
+            <div class="container-navigation ">
               <ul class="navigation mt-3">
                 <li class="navigation-item">
                   <a class="py-2" href="home.html">Accueil</a>
@@ -62,15 +66,40 @@
                 </li>
               </ul>
               <div class="divide bg-silver mx-3"></div>
+              <!-- Profile Icon -->
               <a
-                href="profile.html"
-                class="profile _w-30 _h-30 rounded-pill middle overflow-hidden"
-              >
-                <i class="bi bi-person-circle"></i>
-              </a>
+              href="profile.html"
+              class="profile rounded-pill middle overflow-hidden border-1"
+            >
+              <i class="bi bi-person-circle"></i>
+            </a>
+            <div class="sub-profile border-1 bg-white rounded-2">
+              <ul class="px-4 py-3">
+                <li class="fs-14 mb-2">
+                  <a
+                    class="darkGray d-flex align-items-center gap-1"
+                    href="profile.html"
+                  >
+                    <i class="bi bi-person"></i>
+                    <span>Profile</span>
+                  </a>
+                </li>
+                <div class="line bg-silver w-100 mb-2"></div>
+                <li class="fs-14">
+                  <a
+                    class="darkGray d-flex align-items-center gap-1"
+                    href=""
+                  >
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Deconnexion</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
             </div>
           </div>
         </div>
+       </div>
       </nav>
     </header>
     <section class="section">
@@ -78,7 +107,7 @@
         <div class="d-flex justify-content-between">
           <div class="main-content h-auto">
             <div
-              class="d-flex justify-content-between align-items-center search-header mt-1 mb-4 px-4"
+              class="d-flex justify-content-between align-items-center search-header mt-1 mb-4 px-4 "
             >
             <div
                 class="_h-40 _w-40 border-1 rounded-pill middle bg-white cursor mx-2 menu-toggle"
@@ -93,89 +122,92 @@
               </div>
 
             </div>
-
-            <div class="row px-4 gx-2 gy-2 mb-4 py-4">
-              <div class="col-md-4">
-                <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1 card-stat">
-                  <span class="fs-12 black fw-5 text-uppercase d-block mb-3"
-                    >containeur</span
-                  >
-                  <div class="line bg-silver mb-3"></div>
-                  <h1 class="fs-22 fw-5 blue">400</h1>
+            
+              <div class="container px-4 mb-3">
+                <div class="row gx-3 gy-2">
+                  <div class="col-md-4">
+                    <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1 card-stat">
+                      <span class="fs-12 black fw-5 text-uppercase d-block mb-3"
+                        >containeur</span
+                      >
+                      <div class="line bg-silver mb-3"></div>
+                      <h1 class="fs-22 fw-5 blue">400</h1>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1 card-stat">
+                      <span class="fs-12 black fw-5 text-uppercase d-block mb-3"
+                        >containeur</span
+                      >
+                      <div class="line bg-silver mb-3"></div>
+                      <h1 class="fs-22 fw-5 blue">400</h1>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1 card-stat">
+                      <span class="fs-12 black fw-5 text-uppercase d-block mb-3"
+                        >containeur</span
+                      >
+                      <div class="line bg-silver mb-3"></div>
+                      <h1 class="fs-22 fw-5 blue">400</h1>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1 card-stat">
+                      <span class="fs-12 black fw-5 text-uppercase d-block mb-3"
+                        >containeur</span
+                      >
+                      <div class="line bg-silver mb-3"></div>
+                      <h1 class="fs-22 fw-5 blue">400</h1>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1 card-stat">
+                      <span class="fs-12 black fw-5 text-uppercase d-block mb-3"
+                        >containeur</span
+                      >
+                      <div class="line bg-silver mb-3"></div>
+                      <h1 class="fs-22 fw-5 blue">400</h1>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1 card-stat">
+                      <span class="fs-12 black fw-5 text-uppercase d-block mb-3"
+                        >containeur</span
+                      >
+                      <div class="line bg-silver mb-3"></div>
+                      <h1 class="fs-22 fw-5 blue">400</h1>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1 card-stat">
+                      <span class="fs-12 black fw-5 text-uppercase d-block mb-3"
+                        >containeur</span
+                      >
+                      <div class="line bg-silver mb-3"></div>
+                      <h1 class="fs-22 fw-5 blue">400</h1>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1 card-stat">
+                      <span class="fs-12 black fw-5 text-uppercase d-block mb-3"
+                        >containeur</span
+                      >
+                      <div class="line bg-silver mb-3"></div>
+                      <h1 class="fs-22 fw-5 blue">400</h1>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1 card-stat">
+                      <span class="fs-12 black fw-5 text-uppercase d-block mb-3"
+                        >containeur</span
+                      >
+                      <div class="line bg-silver mb-3"></div>
+                      <h1 class="fs-22 fw-5 blue">400</h1>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1 card-stat">
-                  <span class="fs-12 black fw-5 text-uppercase d-block mb-3"
-                    >containeur</span
-                  >
-                  <div class="line bg-silver mb-3"></div>
-                  <h1 class="fs-22 fw-5 blue">400</h1>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1 card-stat">
-                  <span class="fs-12 black fw-5 text-uppercase d-block mb-3"
-                    >containeur</span
-                  >
-                  <div class="line bg-silver mb-3"></div>
-                  <h1 class="fs-22 fw-5 blue">400</h1>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1 card-stat">
-                  <span class="fs-12 black fw-5 text-uppercase d-block mb-3"
-                    >containeur</span
-                  >
-                  <div class="line bg-silver mb-3"></div>
-                  <h1 class="fs-22 fw-5 blue">400</h1>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1 card-stat">
-                  <span class="fs-12 black fw-5 text-uppercase d-block mb-3"
-                    >containeur</span
-                  >
-                  <div class="line bg-silver mb-3"></div>
-                  <h1 class="fs-22 fw-5 blue">400</h1>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="rounded-3 w-100 h-auto py-3 px-3 bg-white border-1 card-stat">
-                  <span class="fs-12 black fw-5 text-uppercase d-block mb-3"
-                    >containeur</span
-                  >
-                  <div class="line bg-silver mb-3"></div>
-                  <h1 class="fs-22 fw-5 blue">400</h1>
-                </div>
-              </div>
-            </div>
-
-            <!-- footer -->
-            <footer class="py-4 bg-navy px-4">
-              <div class="row justify-content-center gx-2">
-                <div class="col-md-4">
-                  <ul class="footer-link">
-                    <li><a href="home" class="fs-14">Accueil</a></li>
-                    <li><a href="agences.html" class="fs-14">Agences</a></li>
-                  </ul>
-                </div>
-                <div class="col-md-4">
-                  <ul class="footer-link">
-                    <li><a href="livreur.html" class="fs-14">Livreurs</a></li>
-                    <li>
-                      <a href="fournisseurs.html" class="fs-14">Fournisseurs</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-4">
-                  <ul class="footer-link">
-                    <li><a href="client.html" class="fs-14">Clients</a></li>
-                    <li><a href="port.html" class="fs-14">Ports</a></li>
-                  </ul>
-                </div>
-              </div>
-            </footer>
           </div>
           <div class="sidebar bg-white mt-1">
             <div class="title py-5 mb-3">
@@ -189,20 +221,29 @@
                   >Recherche par liste</span
                 >
                 <div class="line bg-silver mb-4"></div>
-                <li class="px-2 py-2">
-                  <a href="client.html">Clients</a>
-                </li>
-                <li class="px-2 py-2">
-                  <a href="fournisseurs.html">Fournisseurs</a>
-                </li>
-                <li class="px-2 py-2"><a href="port.html">Port</a></li>
-                <li class="px-2 py-2"><a href="agences.html">Agences</a></li>
+                <a href="client.html">
+                  <li class="px-2 py-2">Client</li>
+                </a>
+                <a href="fournisseurs.html">
+                  <li class="px-2 py-2">Fournisseurs</li>
+                </a>
+                <a href="agences.html">
+                  <li class="px-2 py-2">Agences</li>
+                </a>
+                <a href="port.html">
+                  <li class="px-2 py-2">Port</li>
+                </a>
               </ul>
               <span class="light-blue fs-13 mb-2 d-block fw-5"
                 >Recherche par critere</span
               >
               <div class="line bg-silver mb-4"></div>
               <div class="searchByCritere d-flex flex-wrap">
+                <a
+                  href="listeBl.html"
+                  class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
+                  >Liste BL</a
+                >
                 <a
                   href="searchBL.html"
                   class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
@@ -214,7 +255,7 @@
                   >Dossiers</a
                 >
                 <a
-                  href="#"
+                  href="searchContainer.html"
                   class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
                   >Containeur</a
                 >
@@ -224,6 +265,7 @@
         </div>
       </div>
     </section>
+    <script src="../JS/responsive.js"></script>
     <script src="../JS/script.js"></script>
     <script src="../JS/accordion.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

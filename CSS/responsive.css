@@ -1,10 +1,13 @@
 /* Mobile Responsive */
 
 @media screen and (max-width: 575.98px) {
+  .login {
+    width: 70%;
+  }
   .container-navigation {
     position: absolute;
-    top: 70px;
-    right: 15px;
+    top: 60px;
+    right: 0;
     background: #ffffff;
     width: 250px;
     display: block; /* Initially hidden */
@@ -92,27 +95,89 @@
   .search-header {
     display: block !important;
   }
-
-  /* footer */
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 0 1rem !important;
+  .modal-form,
+  .modal-form-role {
+    width: auto;
+    z-index: 1;
+    top: -40%;
+    right: 7%;
+    display: none;
   }
 }
-.container:has(+ footer) {
-  margin-bottom: 9rem !important;
-}
+
 @media only screen and (max-width: 767.98px),
   only screen and (max-width: 991.98px) {
-}
-@media only screen and (min-width: 992px) {
-  footer {
-    position: relative;
+  .main-container-fluid {
     width: 100%;
   }
-  .container:has(+ footer) {
-    margin-bottom: 0;
+  .main-content {
+    margin: 0;
+    width: 100%;
+    border: none;
   }
+
+  .container-navigation {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #ffffff;
+    width: 250px;
+    display: block; /* Initially hidden */
+    flex-direction: column;
+    display: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem 0;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .container-navigation.show {
+    display: block;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .navigation .navigation-item {
+    padding: 10px 40px;
+    transition: 0.3s ease;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  .navigation .navigation-item a {
+    font-size: 18px;
+  }
+  .navigation .navigation-item:last-child {
+    border-bottom: none;
+  }
+  .navigation .navigation-item a.active {
+    color: #ff7124;
+    font-weight: 600;
+    border-bottom: none;
+  }
+  .container-navigation .profile,
+  .container-navigation .divide {
+    display: none;
+  }
+  .menuToggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  header + .section {
+    margin-top: 5rem;
+  }
+  .modal-form,
+  .modal-form-role {
+    width: auto;
+    z-index: 1;
+    top: 28%;
+    right: 7%;
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
 }

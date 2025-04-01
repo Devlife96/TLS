@@ -12,6 +12,12 @@ if (width <= 575.98) {
   toggleNavbar();
   document.querySelector(".menu-toggle").innerHTML =
     '<i class="bi bi-filter-left fw-5 darkGray fs-20"></i>';
+} else if (width >= 767.98 && width <= 991.98) {
+  hideSidebar();
+  toggSidebar();
+  toggleNavbar();
+  document.querySelector(".menu-toggle").innerHTML =
+    '<i class="bi bi-filter-left fw-5 darkGray fs-20"></i>';
 } else {
   // Menu toggle
 
@@ -64,7 +70,12 @@ function showSidebar() {
       '<h2 class="fs-20 px-4 blue"><i class="bi bi-x fs-22 fw-800 border-1 px-2 rounded-1 darkGray"></i> Close Menu</h2>';
     headerMenu.innerHTML = content;
     element.classList.remove("hide");
-    element.style.width = "70%";
+    if (width <= 575.98) {
+      element.style.width = "70%";
+    }
+    if (width >= 767.98 && width <= 991.98) {
+      element.style.width = "40%";
+    }
     element.style.height = "auto !important";
     element.style.position = "absolute !important";
     element.style.zIndex = "1000";
@@ -85,11 +96,15 @@ function toggleNavbar() {
     element.addEventListener("click", () => {
       navbar.forEach((nav) => {
         if (nav.classList.contains("show")) {
+          element.innerHTML =
+            '<i class="bi bi-list px-2 darkGray rounded-2"></i>';
           nav.classList.remove("show");
         } else {
           document.querySelectorAll(".navigation").forEach((nav) => {
             nav.appendChild(li);
           });
+          element.innerHTML =
+            '<i class="bi bi-x px-2 border-1 darkGray rounded-2"></i>';
           nav.classList.add("show");
         }
       });

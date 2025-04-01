@@ -28,9 +28,9 @@
   </head>
   <body>
     <header class="fixed-top">
-      <nav class="main-menu w-100 bg-white h-auto bottom-1 position-relative">
+      <nav class="main-menu w-100 bg-white h-auto bottom-1">
         <div class="container-fluid">
-          <div class="main-container-fluid mx-auto">
+          <div class="main-container-fluid mx-auto position-relative">
             <div class="d-flex justify-content-between align-items-center">
               <a class="logo" href="home.html">
                 <img
@@ -66,12 +66,36 @@
                   </li>
                 </ul>
                 <div class="divide bg-silver mx-3"></div>
+                <!-- Profile Icon -->
                 <a
                   href="profile.html"
-                  class="profile _w-30 _h-30 rounded-pill middle overflow-hidden"
+                  class="profile rounded-pill middle overflow-hidden border-1"
                 >
                   <i class="bi bi-person-circle"></i>
                 </a>
+                <div class="sub-profile border-1 bg-white rounded-2">
+                  <ul class="px-4 py-3">
+                    <li class="fs-14 mb-2">
+                      <a
+                        class="darkGray d-flex align-items-center gap-1"
+                        href="profile.html"
+                      >
+                        <i class="bi bi-person"></i>
+                        <span>Profile</span>
+                      </a>
+                    </li>
+                    <div class="line bg-silver w-100 mb-2"></div>
+                    <li class="fs-14">
+                      <a
+                        class="darkGray d-flex align-items-center gap-1"
+                        href=""
+                      >
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Deconnexion</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -86,7 +110,7 @@
               class="d-flex justify-content-center align-items-center search-header gap-2 mt-1"
             >
               <div
-                class="_h-40 _w-40 border-1 rounded-pill middle bg-white cursor  menu-toggle"
+                class="_h-40 _w-40 border-1 rounded-pill middle bg-white cursor menu-toggle"
               >
                 <i class="bi bi-chevron-left fw-5 darkGray"></i>
               </div>
@@ -107,7 +131,7 @@
 
               <a
                 href="addbl.html"
-                class="_h-40 _w-40 middle bg-white  _btn reveal-data"
+                class="_h-40 _w-40 middle bg-white _btn reveal-data"
               >
                 <i class="bi bi-plus-lg fw-6"></i>
               </a>
@@ -118,102 +142,76 @@
             <div class="mb-4 py-4">
               <div class="container px-4">
                 <div
-                class="d-flex justify-content-between align-items-center mb-3"
-              >
-                <div class="">
-                  <span class="darkGray fs-13">50 Resultat(s)</span>
-                  <h3 class="blue fw-6 text-uppercase fs-14">
-                    Liste Utilisateurs
-                  </h3>
-                </div>
-                <div class="">
-                  <div class="d-flex align-items-center">
-                    <button
-                      data-target="#modal1"
-                      id="openModal1"
-                      class="_h-40 px-2 middle bg-white mx-2 _btn reveal-data d-flex align-items-center gap-1"
-                    >
-                      <i class="bi bi-plus-lg fw-6"></i>
-                      <span> Utilisateur</span>
-                    </button>
-                    <button
-                      data-target="#modal2"
-                      id="openModal1"
-                      class="_h-40 px-2 middle bg-white mx-2 _btn reveal-data d-flex align-items-center gap-1"
-                    >
-                      <i class="bi bi-plus-lg fw-6"></i>
-                      <span> Role</span>
-                    </button>
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <div class="">
+                    <span class="darkGray fs-13">50 Resultat(s)</span>
+                    <h3 class="blue fw-6 text-uppercase fs-14">
+                      Liste Utilisateurs
+                    </h3>
+                  </div>
+                  <div class="">
+                    <div class="d-flex align-items-center">
+                      <button
+                        data-target="#modal1"
+                        id="openModal1"
+                        class="_h-40 px-2 middle bg-white mx-2 _btn reveal-data d-flex align-items-center gap-1"
+                      >
+                        <i class="bi bi-plus-lg fw-6"></i>
+                        <span> Utilisateur</span>
+                      </button>
+                      <button
+                        data-target="#modal2"
+                        id="openModal1"
+                        class="_h-40 px-2 middle bg-white mx-2 _btn reveal-data d-flex align-items-center gap-1"
+                      >
+                        <i class="bi bi-plus-lg fw-6"></i>
+                        <span> Role</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="line bg-silver mb-3"></div>
-              <div class="table-responsive-sm">
-                <table class="table result">
-                  <thead class="thead-custom">
-                    <tr>
-                      <th class="fs-18 urbanist-medium darkGray-4">Nom</th>
-                      <th class="fs-18 urbanist-medium darkGray-4">Email</th>
-                      <th class="fs-18 urbanist-medium darkGray-4">Role</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="gray-3">User-001</td>
-                      <td class="gray-3">profile.png</td>
-                      <td class="gray-3">User-001</td>
-                    </tr>
-                    <tr>
-                      <td class="gray-3">User-001</td>
-                      <td class="gray-3">profile.png</td>
-                      <td class="gray-3">User-001</td>
-                    </tr>
-                    <tr>
-                      <td class="gray-3">User-001</td>
-                      <td class="gray-3">profile.png</td>
-                      <td class="gray-3">User-001</td>
-                    </tr>
-                    <tr>
-                      <td class="gray-3">User-001</td>
-                      <td class="gray-3">profile.png</td>
-                      <td class="gray-3">User-001</td>
-                    </tr>
-                    <tr>
-                      <td class="gray-3">User-001</td>
-                      <td class="gray-3">profile.png</td>
-                      <td class="gray-3">User-001</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+                <div class="line bg-silver mb-3"></div>
+                <div class="table-responsive-sm">
+                  <table class="table result">
+                    <thead class="thead-custom">
+                      <tr>
+                        <th class="fs-18 urbanist-medium darkGray-4">Nom</th>
+                        <th class="fs-18 urbanist-medium darkGray-4">Email</th>
+                        <th class="fs-18 urbanist-medium darkGray-4">Role</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="gray-3">User-001</td>
+                        <td class="gray-3">profile.png</td>
+                        <td class="gray-3">User-001</td>
+                      </tr>
+                      <tr>
+                        <td class="gray-3">User-001</td>
+                        <td class="gray-3">profile.png</td>
+                        <td class="gray-3">User-001</td>
+                      </tr>
+                      <tr>
+                        <td class="gray-3">User-001</td>
+                        <td class="gray-3">profile.png</td>
+                        <td class="gray-3">User-001</td>
+                      </tr>
+                      <tr>
+                        <td class="gray-3">User-001</td>
+                        <td class="gray-3">profile.png</td>
+                        <td class="gray-3">User-001</td>
+                      </tr>
+                      <tr>
+                        <td class="gray-3">User-001</td>
+                        <td class="gray-3">profile.png</td>
+                        <td class="gray-3">User-001</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
-             <!-- footer -->
-             <footer class="py-4 bg-navy">
-              <div class="container px-4">
-                <div class="row justify-content-center">
-                  <div class="col-4 py-2">
-                    <ul class="footer-link">
-                      <li><a href="home" class="fs-14">Accueil</a></li>
-                      <li><a href="agences.html" class="fs-14">Agences</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-4 py-2">
-                    <ul class="footer-link">
-                      <li><a href="livreur.html" class="fs-14">Livreurs</a></li>
-                      <li>
-                        <a href="fournisseurs.html" class="fs-14">Fournisseurs</a>
-                      </li>
-                  </div>
-                  <div class="col-4 py-2">
-                    <ul class="footer-link">
-                      <li><a href="client.html" class="fs-14">Clients</a></li>
-                      <li><a href="port.html" class="fs-14">Ports</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-          </footer>
             <div
               class="modal-form rounded-3 border-1 position-fixed bg-white h-auto"
               id="modal1"
@@ -381,12 +379,18 @@
                   >Recherche par liste</span
                 >
                 <div class="line bg-silver mb-4"></div>
-                <li class="px-2 py-2"><a href="client.html">Clients</a></li>
-                <li class="px-2 py-2">
-                  <a href="fournisseurs.html">Fournisseurs</a>
-                </li>
-                <li class="px-2 py-2"><a href="port.html">Port</a></li>
-                <li class="px-2 py-2"><a href="agences.html">Agences</a></li>
+                <a href="client.html">
+                  <li class="px-2 py-2">Client</li>
+                </a>
+                <a href="fournisseurs.html">
+                  <li class="px-2 py-2">Fournisseurs</li>
+                </a>
+                <a href="agences.html">
+                  <li class="px-2 py-2">Agences</li>
+                </a>
+                <a href="client.html">
+                  <li class="px-2 py-2">Client</li>
+                </a>
               </ul>
               <span class="light-blue fs-13 mb-2 d-block fw-5"
                 >Recherche par critere</span

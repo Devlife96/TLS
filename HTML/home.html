@@ -28,43 +28,85 @@
   </head>
   <body>
     <header class="fixed-top">
-      <nav class="main-menu w-100 bg-white h-auto bottom-1 position-relative">
+      <nav class="main-menu w-100 bg-white h-auto bottom-1">
         <div class="container-fluid">
-          <div class="main-container-fluid mx-auto">
+          <div class="main-container-fluid mx-auto position-relative">
             <div class="d-flex justify-content-between align-items-center">
               <!-- Logo -->
               <a class="logo">
-                <img src="../IMG/logo/tls-logo.png" alt="Logo" class="w-auto h-100 img-fluid" />
+                <img
+                  src="../IMG/logo/tls-logo.png"
+                  alt="Logo"
+                  class="w-auto h-100 img-fluid"
+                />
               </a>
-    
+
               <!-- Menu Toggle Button (Visible on Mobile) -->
               <div class="menuToggle"><i class="bi bi-list darkGray"></i></div>
-             
-    
+
               <!-- Navigation Menu -->
               <div class="container-navigation">
                 <ul class="navigation mt-3">
-                  <li class="navigation-item"><a class="py-2" class="active" href="#">Accueil</a></li>
-                  <li class="navigation-item"><a class="py-2" href="listeAgence.html">Agences</a></li>
-                  <li class="navigation-item"><a class="py-2" href="livreur.html">Livreurs</a></li>
-                  <li class="navigation-item"><a class="py-2" href="listeClient.html">Clients</a></li>
-                  <li class="navigation-item"><a class="py-2" href="listeUtilisateur.html">Utilisateurs</a></li>
-                  <li class="navigation-item"><a class="py-2" href="listePort.html">Ports</a></li>
-                  
+                  <li class="navigation-item">
+                    <a class="py-2" class="active" href="#">Accueil</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="py-2" href="listeAgence.html">Agences</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="py-2" href="livreur.html">Livreurs</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="py-2" href="listeClient.html">Clients</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="py-2" href="listeUtilisateur.html"
+                      >Utilisateurs</a
+                    >
+                  </li>
+                  <li class="navigation-item">
+                    <a class="py-2" href="listePort.html">Ports</a>
+                  </li>
                 </ul>
                 <div class="divide bg-silver mx-3"></div>
-    
+
                 <!-- Profile Icon -->
-                <a href="profile.html" class="profile rounded-pill middle overflow-hidden border-1">
+                <a
+                  href="profile.html"
+                  class="profile rounded-pill middle overflow-hidden border-1"
+                >
                   <i class="bi bi-person-circle"></i>
                 </a>
+                <div class="sub-profile border-1 bg-white rounded-2">
+                  <ul class="px-4 py-3">
+                    <li class="fs-14 mb-2">
+                      <a
+                        class="darkGray d-flex align-items-center gap-1"
+                        href=""
+                      >
+                        <i class="bi bi-person"></i>
+                        <span>Profile</span>
+                      </a>
+                    </li>
+                    <div class="line bg-silver w-100 mb-2"></div>
+                    <li class="fs-14">
+                      <a
+                        class="darkGray d-flex align-items-center gap-1"
+                        href=""
+                      >
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Deconnexion</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    
+
     <!-- <header class="fixed-top">
       <nav class="main-menu w-100 bg-white h-auto bottom-1">
         <div class="container-fluid">
@@ -131,10 +173,10 @@
         <div class="d-flex justify-content-between">
           <div class="main-content h-auto">
             <div
-              class="d-flex  justify-content-center align-items-center search-header mt-1 gap-1"
+              class="d-flex justify-content-center align-items-center search-header mt-1 gap-1"
             >
               <div
-                class="_h-40 _w-40 border-1 rounded-pill middle bg-white cursor  menu-toggle"
+                class="_h-40 _w-40 border-1 rounded-pill middle bg-white cursor menu-toggle"
               >
                 <i class="bi bi-chevron-left fw-5 darkGray"></i>
               </div>
@@ -165,89 +207,91 @@
             </div>
             <div class="py-4 mb-3 bottom-1">
               <div class="container px-4">
-                    <form
-                      method="post"
-                      class="searchDate d-flex justify-content-center  gap-2 _form"
-                    >
-                      <input
-                        id="date1"
-                        class="w-100 bg-whiteChalk darkGray fs-14 input px-2 _h-40 rounded-2 cursor datetime-input"
-                        type="date"
-                        placeholder="MM / DD / YYYY"
-                        readonly
-                      />
-                      <input
-                        id="date2"
-                        class="w-100 bg-whiteChalk darkGray fs-14 input px-2 _h-40 rounded-2 cursor datetime-input"
-                        type="date"
-                        placeholder="MM / DD / YYYY"
-                        readonly
-                      />
-                      <button
-                        class="_btn bg-white _h-40 px-3 rounded-2"
-                        type="submit"
-                      >
-                        <i class="bi bi-search fs-13"></i>
-                      </button>
-                    </form>
+                <form
+                  method="post"
+                  class="searchDate d-flex justify-content-center gap-2 _form"
+                >
+                  <input
+                    id="date1"
+                    class="w-100 bg-whiteChalk darkGray fs-14 input px-2 _h-40 rounded-2 cursor datetime-input"
+                    type="date"
+                    placeholder="MM / DD / YYYY"
+                    readonly
+                  />
+                  <input
+                    id="date2"
+                    class="w-100 bg-whiteChalk darkGray fs-14 input px-2 _h-40 rounded-2 cursor datetime-input"
+                    type="date"
+                    placeholder="MM / DD / YYYY"
+                    readonly
+                  />
+                  <button
+                    class="_btn bg-white _h-40 px-3 rounded-2"
+                    type="submit"
+                  >
+                    <i class="bi bi-search fs-13"></i>
+                  </button>
+                </form>
               </div>
             </div>
             <div class="container px-4">
-                  <div class="rounded-3 w-100 h-auto py-3 px-2 bg-white border-1 mb-3">
-                    <div class="row mb-2">
-                      <div class="col-sm-3 col-md-4">
-                        <div class="">
-                        <span class="px-3 fs-12 darkGray text-uppercase"
-                          >NUMERO BL</span
-                        >
-                        <p class="px-3 fs-12 fw-6">BL-OOO-2025-0001</p>
-                      </div>
+              <div
+                class="rounded-3 w-100 h-auto py-3 px-2 bg-white border-1 mb-3"
+              >
+                <div class="row mb-2">
+                  <div class="col-sm-3 col-md-4">
+                    <div class="">
+                      <span class="px-3 fs-12 darkGray text-uppercase"
+                        >NUMERO BL</span
+                      >
+                      <p class="px-3 fs-12 fw-6">BL-OOO-2025-0001</p>
                     </div>
-                      <div class="col-sm-3 col-md-4">
-                        <div class="">
-                          <span class="px-3 fs-12 darkGray text-uppercase"
-                            >NOM DU CLIENT</span
-                          >
-                          <p class="px-3 fs-12 fw-6">BL-OOO-2025-0001</p>
-                        </div>
-                      </div>
-                      <div class="col-sm-3 col-md-4">
-                        <div class="">
-                          <span class="px-3 fs-12 darkGray text-uppercase"
-                            >NOM DE L'AGENCE</span
-                          >
-                          <p class="px-3 fs-12 fw-6">BL-OOO-2025-0001</p>
-                        </div>
-                      </div>                     
+                  </div>
+                  <div class="col-sm-3 col-md-4">
+                    <div class="">
+                      <span class="px-3 fs-12 darkGray text-uppercase"
+                        >NOM DU CLIENT</span
+                      >
+                      <p class="px-3 fs-12 fw-6">BL-OOO-2025-0001</p>
                     </div>
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="">
-                          <span class="px-3 fs-12 darkGray text-uppercase"
-                            >NUMERO DU DOSIER</span
-                          >
-                          <p class="px-3 fs-12 fw-6">BL-OOO-2025-0001</p>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="">
-                          <span class="px-3 fs-12 darkGray text-uppercase"
-                            >Qt CONTAINEUR</span
-                          >
-                          <p class="px-3 fs-12 fw-6">BL-OOO-2025-0001</p>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="">
-                          <span class="px-3 fs-12 darkGray text-uppercase"
-                            >NOM DU PORT</span
-                          >
-                          <p class="px-3 fs-12 fw-6">BL-OOO-2025-0001</p>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="col-sm-3 col-md-4">
+                    <div class="">
+                      <span class="px-3 fs-12 darkGray text-uppercase"
+                        >NOM DE L'AGENCE</span
+                      >
+                      <p class="px-3 fs-12 fw-6">BL-OOO-2025-0001</p>
                     </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="">
+                      <span class="px-3 fs-12 darkGray text-uppercase"
+                        >NUMERO DU DOSIER</span
+                      >
+                      <p class="px-3 fs-12 fw-6">BL-OOO-2025-0001</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="">
+                      <span class="px-3 fs-12 darkGray text-uppercase"
+                        >Qt CONTAINEUR</span
+                      >
+                      <p class="px-3 fs-12 fw-6">BL-OOO-2025-0001</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="">
+                      <span class="px-3 fs-12 darkGray text-uppercase"
+                        >NOM DU PORT</span
+                      >
+                      <p class="px-3 fs-12 fw-6">BL-OOO-2025-0001</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="row  mb-4">
+              <div class="row mb-4">
                 <div class="col-12">
                   <div class="accordion-content">
                     <div
@@ -891,8 +935,12 @@
                           <div
                             class="cursor mb-2 mx-3 py-0 hideInfo px-3 border-1 rounded-1 d-flex justify-content-between align-items-center"
                           >
-                            <p class="darkGray mt-3">Information Suplementaire</p>
-                            <i class="bi bi-chevron-down darkGray mt-2 arrow"></i>
+                            <p class="darkGray mt-3">
+                              Information Suplementaire
+                            </p>
+                            <i
+                              class="bi bi-chevron-down darkGray mt-2 arrow"
+                            ></i>
                           </div>
                           <div
                             class="showInfo mx-3 mb-3 px-3 py-4 border-1 bg-whiteChalk-1 rounded-1"
@@ -900,13 +948,15 @@
                             <div class="row mb-2">
                               <div class="col-md-6">
                                 <div class="mb-1">
-                                  <span class="px-3 fs-12 darkGray text-uppercase"
+                                  <span
+                                    class="px-3 fs-12 darkGray text-uppercase"
                                     >Date Remise</span
                                   >
                                   <p class="px-3 fs-18">BL-OOO-2025-0001</p>
                                 </div>
                                 <div class="mb-1">
-                                  <span class="px-3 fs-12 darkGray text-uppercase"
+                                  <span
+                                    class="px-3 fs-12 darkGray text-uppercase"
                                     >Date REtour</span
                                   >
                                   <p class="px-3 fs-18">BL-OOO-2025-0001</p>
@@ -914,13 +964,15 @@
                               </div>
                               <div class="col-md-6">
                                 <div class="mb-1">
-                                  <span class="px-3 fs-12 darkGray text-uppercase"
+                                  <span
+                                    class="px-3 fs-12 darkGray text-uppercase"
                                     >Date completee</span
                                   >
                                   <p class="px-3 fs-18">BL-OOO-2025-0001</p>
                                 </div>
                                 <div class="mb-1">
-                                  <span class="px-3 fs-12 darkGray text-uppercase"
+                                  <span
+                                    class="px-3 fs-12 darkGray text-uppercase"
                                     >Chauffeur</span
                                   >
                                   <p class="px-3 fs-18">BL-OOO-2025-0001</p>
@@ -933,7 +985,8 @@
                                 <div
                                   class="mx-3 note-bl px-3 py-3 border-1 rounded-1"
                                 >
-                                  <span class="darkGray fs-12 text-uppercase mb-2"
+                                  <span
+                                    class="darkGray fs-12 text-uppercase mb-2"
                                     >notes</span
                                   >
                                   <div class="line bg-silver w-100 mb-2"></div>
@@ -1042,32 +1095,6 @@
                 </div>
               </div>
             </div>
-            <!-- footer -->
-            <footer class="py-4 bg-navy">
-                <div class="container px-4">
-                  <div class="row justify-content-center">
-                    <div class="col-4 py-2">
-                      <ul class="footer-link">
-                        <li><a href="home" class="fs-14">Accueil</a></li>
-                        <li><a href="agences.html" class="fs-14">Agences</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-4 py-2">
-                      <ul class="footer-link">
-                        <li><a href="livreur.html" class="fs-14">Livreurs</a></li>
-                        <li>
-                          <a href="fournisseurs.html" class="fs-14">Fournisseurs</a>
-                        </li>
-                    </div>
-                    <div class="col-4 py-2">
-                      <ul class="footer-link">
-                        <li><a href="client.html" class="fs-14">Clients</a></li>
-                        <li><a href="port.html" class="fs-14">Ports</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-            </footer>
           </div>
           <div class="sidebar bg-white mt-1">
             <div class="title py-5 mb-3">
@@ -1081,12 +1108,18 @@
                   >Recherche par liste</span
                 >
                 <div class="line bg-silver mb-4"></div>
-                <li class="px-2 py-2"><a href="client.html">Clients</a></li>
-                <li class="px-2 py-2">
-                  <a href="fournisseurs.html">Fournisseurs</a>
-                </li>
-                <li class="px-2 py-2"><a href="port.html">Port</a></li>
-                <li class="px-2 py-2"><a href="agences.html">Agences</a></li>
+                <a href="client.html">
+                  <li class="px-2 py-2">Client</li>
+                </a>
+                <a href="fournisseurs.html">
+                  <li class="px-2 py-2">Fournisseurs</li>
+                </a>
+                <a href="agences.html">
+                  <li class="px-2 py-2">Agences</li>
+                </a>
+                <a href="port.html">
+                  <li class="px-2 py-2">Port</li>
+                </a>
               </ul>
               <span class="light-blue fs-13 mb-2 d-block fw-5"
                 >Recherche par critere</span
@@ -1104,12 +1137,12 @@
                   >Numero BL</a
                 >
                 <a
-                  href=""
+                  href="searchDossier.html"
                   class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
                   >Dossiers</a
                 >
                 <a
-                  href=""
+                  href="searchContainer.html"
                   class="tag-search px-3 py-1 border-1 rounded-4 mx-1 my-1"
                   >Containeur</a
                 >
@@ -1119,8 +1152,8 @@
         </div>
       </div>
     </section>
-   
-     <script src="../JS/responsive.js"></script>         
+
+    <script src="../JS/responsive.js"></script>
     <script src="../JS/datepicker.js"></script>
     <script src="../JS/script.js"></script>
     <script src="../JS/accordion.js"></script>
